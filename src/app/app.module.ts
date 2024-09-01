@@ -3,15 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientModule } from '@angular/common/http';
+import { MarkDownLoadComponent } from "./mark-down-load/mark-down-load.component";
+import { MenuComponent } from "./menu/menu.component";
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    MarkdownModule.forRoot(),
+    HttpClientModule,
+    MarkDownLoadComponent,
+    MenuComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })

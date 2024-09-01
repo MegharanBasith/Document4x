@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <nav id="sidebar" class="sidebar">
+        <div class="brand-name" (click)="toggleMenu()">
+            FTS Document Management
+        </div>
+        <ul class="menu list-unstyled">
+            <li *ngFor="let item of menus; let i = index" class="mb-2">
+                <a href="#" (click)="toggleSubMenu(i)">
+                    {{ item.title }}
+                    <!-- <i *ngIf="item.children && item.children.length > 0" class="fa fa-chevron-down"></i> -->
+                </a>
+                <ul id="menu{{ i }}" [ngClass]="{'collapse': !isSubMenuOpen[i]}" class="list-unstyled ms-3 mt-2"
+                    *ngIf="item.children && item.children.length > 0">
+                    <li *ngFor="let child of item.children" class="mb-1">
+                        <a (click)="openMdFile(child.url)">
+                            {{ child.title }}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <mark-down-load [loadPage]="true"></mark-down-load>
+    </div>
+</div>

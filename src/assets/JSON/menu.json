@@ -1,0 +1,37 @@
+{
+  "menus": [
+    {
+      "title": "Helpdesk",
+      "icon": "fa fa-house",
+      "children": [
+        {
+          "title": "Helpdesk Documentation",
+          "url": "/assets/Documents/Mawarid-helpdesk-documentation/MawaridHelpdeskDocumentation.md"
+        }
+      ]
+    },
+    {
+      "title": "Maintenance",
+      "children": [
+        {
+          "title": "Maintenance Admin Login",
+          "url": "/assets/Documents/Mawarid-Maintenance-Documentation/AdminLoginDocumentation/AdminLoginDocumentation.md"
+        },
+        {
+          "title": "Maintenance Supervisor Login",
+          "url": "assets/Documents/Mawarid-Maintenance-Documentation/SupervisorLoginDocumentation/SupervisorLoginDocumentation.md"
+        }
+      ]
+    },
+    {
+      "title": "Explore Us",
+      "icon": "fa fa-Home",
+      "children": [
+        {
+          "title": "Home",
+          "url": "/assets/Documents/Home/home.md"
+        }
+      ]
+    }
+  ]
+}
