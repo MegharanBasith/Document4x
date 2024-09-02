@@ -4,7 +4,7 @@
             FTS Document Management
         </div>
         <ul class="menu list-unstyled">
-            <a href="" (click)="openMdFile('/assets/Documents/Home/home.md')"><i style="padding-right: 8px;padding-bottom: 10px;" class="fa fa-home"></i>Home
+            <a href="javascript:void(0)" (click)="isload()"><i style="padding-right: 8px;padding-bottom: 10px;" class="fa fa-home" ></i>Home
             </a>
             <li *ngFor="let item of menus; let i = index" class="mb-2">
                 <a href="#" (click)="toggleSubMenu(i)">
@@ -24,6 +24,23 @@
         </ul>
     </nav>
     <div class="content">
+        @if (homePageLoad) {
+                <div class="row">
+                    <h3 style="padding: 10px;"><b>Lack of documentation is becoming a problem for acceptance !</b></h3>
+                    <ng-container *ngFor="let item of childMenu;" >
+                        <div class="col-lg-4">
+                <div class="card" (click)="openMdFile(item.url)">
+                    <div class="">
+                        <img [src]='item.image' alt="">
+                    </div>
+                    <p class="card-footer">{{item.title}}</p>
+                  </div>
+                </div>
+                </ng-container>
+                </div>
+        }
+        @else {
         <mark-down-load [loadPage]="true"></mark-down-load>
+        }
     </div>
 </div>

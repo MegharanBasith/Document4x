@@ -1,2 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
-img {max-width: 100%;}
+img {
+    max-width: 100%;
+}
+
+// .tile-sm .tile-body {
+//     padding: 10px;
+//     width: 100%;
+//     display: inline-block;
+// }
+
+// .text-center {
+//     text-align: center !important;
+// }
+
+// .apps {
+//     box-shadow: none;
+//     transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+//     transition-duration: .15s !important;
+// }
+
+// .core_apps {
+//     margin-top: 40px;
+//     width: 100% !important;
+//     display: grid;
+//     row-gap: 20px;
+//     column-gap: 20px;
+//     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+// }
+
+// .apps {
+//     background-color: #fff;
+//     border-radius: 10px;
+//     cursor: pointer;
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//     height: 100px;
+//     box-shadow: 0 0 2px #0000001f, 0 4px 8px #00000024;
+// }
