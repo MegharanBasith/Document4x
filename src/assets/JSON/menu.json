@@ -32,46 +32,6 @@
           "url": "/assets/Documents/Home/home.md"
         }
       ]
-    },
-    {
-      "title": "Test",
-      "icon": "fa fa-Home",
-      "children": [
-        {
-          "title": "CICD Test",
-          "url": "/assets/Documents/Home/home.md"
-        }
-      ]
-    },
-    {
-      "title": "Test1",
-      "icon": "fa fa-Home",
-      "children": [
-        {
-          "title": "CICD Test",
-          "url": "/assets/Documents/Home/home.md"
-        }
-      ]
-    },
-    {
-      "title": "Test2",
-      "icon": "fa fa-Home",
-      "children": [
-        {
-          "title": "CICD Test",
-          "url": "/assets/Documents/Home/home.md"
-        }
-      ]
-    },
-    {
-      "title": "Test3",
-      "icon": "fa fa-Home",
-      "children": [
-        {
-          "title": "CICD Test",
-          "url": "/assets/Documents/Home/home.md"
-        }
-      ]
     }
   ]
 }
