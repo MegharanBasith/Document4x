@@ -1,14 +1,27 @@
+<div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href=""> FTS Document Management</a>
+        <ul class="navbar-nav" (click)="signOut()">
+            <li>
+                <a data-bs-toggle="dropdown" href="javascript:void(0)" class="nav-link"><img
+                        src="{{Image}}" alt="" class="user-avatar"></a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
 <div class="wrapper">
     <nav id="sidebar" class="sidebar">
-        <div class="brand-name" (click)="toggleMenu()">
-            FTS Document Management
+        <div (click)="toggleMenu()">
+
         </div>
         <ul class="menu list-unstyled">
-            <a href="javascript:void(0)" (click)="isload()"><i style="padding-right: 8px;padding-bottom: 10px;" class="fa fa-home" ></i>Home
+            <a href="javascript:void(0)" (click)="isload()"><i style="padding-right: 8px;padding-bottom: 10px;"
+                    class="fa fa-home"></i>Home
             </a>
             <li *ngFor="let item of menus; let i = index" class="mb-2">
                 <a href="#" (click)="toggleSubMenu(i)">
-                  <i style="padding-right: 8px;" class="{{item.icon}}"></i>  {{ item.title }}
+                    <i style="padding-right: 8px;" class="{{item.icon}}"></i> {{ item.title }}
                     <i style="padding-left: 5px;" *ngIf="item.children && item.children.length > 0"
                         class="fa fa-chevron-down"></i>
                 </a>
@@ -25,19 +38,7 @@
     </nav>
     <div class="content">
         @if (homePageLoad) {
-                <div class="row">
-                    <h3 style="padding: 10px;"><b>Lack of documentation is becoming a problem for acceptance !</b></h3>
-                    <ng-container *ngFor="let item of childMenu;" >
-                        <div class="col-lg-4">
-                <div class="card" (click)="openMdFile(item.url)">
-                    <div class="">
-                        <img [src]='item.image' alt="">
-                    </div>
-                    <p class="card-footer">{{item.title}}</p>
-                  </div>
-                </div>
-                </ng-container>
-                </div>
+        <dashboard [childMenu]="childMenu" (openMdFile)="homePage()"></dashboard>
         }
         @else {
         <mark-down-load [loadPage]="true"></mark-down-load>

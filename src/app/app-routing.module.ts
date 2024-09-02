@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MarkDownLoadComponent } from './mark-down-load/mark-down-load.component';
+import { LoginComponent } from '../login/login.component';
+import { MenuComponent } from './menu/menu.component';
 
-const routes: Routes = [{ path: '', component: MarkDownLoadComponent }];
+const routes: Routes = [
+  { path: '', component: LoginComponent },
+  { path: 'home', component: MenuComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

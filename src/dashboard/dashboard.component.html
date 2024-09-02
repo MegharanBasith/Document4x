@@ -1,0 +1,13 @@
+<div class="row">
+    <h3 style="padding: 10px;"><b>Lack of documentation is becoming a problem for acceptance !</b></h3>
+    <ng-container *ngFor="let item of childMenu;">
+        <div class="col-lg-4">
+            <div class="card" (click)="openTileLink(item.url)">
+                <div class="">
+                    <img [src]='item.image' alt="">
+                </div>
+                <p class="card-footer">{{item.title}}</p>
+            </div>
+        </div>
+    </ng-container>
+</div>

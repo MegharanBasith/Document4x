@@ -2,22 +2,33 @@ import { Component } from '@angular/core';
 import { DocumentServiceService } from '../document-service.service';
 import { CommonModule } from '@angular/common';
 import { MarkDownLoadComponent } from '../mark-down-load/mark-down-load.component';
+import { DashboardComponent } from '../../dashboard/dashboard.component';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule,MarkDownLoadComponent],
+  imports: [CommonModule, MarkDownLoadComponent, DashboardComponent],
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss'
+  styleUrl: './menu.component.scss',
 })
 export class MenuComponent {
   ngOnInit(): void {
     debugger;
     this.getMenu();
-    // this.documentService.onPageLoad.next({IsLoad:true,URL:'/assets/Documents/Home/home.md'});
   }
   isSubMenuOpen: boolean[] = [];
-  constructor(private documentService:DocumentServiceService) {}
+  Name:any;
+  Image:any;
+  constructor(
+    private documentService: DocumentServiceService,
+    private authService: AuthService
+  ) {
+    this.Name = JSON.parse(sessionStorage.getItem("CurrentUser")!).name;
+    this.Image = JSON.parse(sessionStorage.getItem("CurrentUser")!).picture;
+  }
+  
+
   toggleMenu() {
     document.getElementById('sidebar')?.classList.toggle('active');
   }
@@ -30,25 +41,13 @@ export class MenuComponent {
   Directory: any;
   menus: any[] = [];
   childMenu: any[] = [];
-  homePageLoad:boolean=true;
+  homePageLoad: boolean = true;
 
   getMenu() {
-    this.documentService.getMenu().subscribe((data:any) => {
-       this.menus = data.menus;
-       this.childMenu = this.combineChildren(this.menus);
-
-      //  this.menus.map((x:any)=>{
-      //   let child :any[] = x.children;
-      //   this.childMenu.push(child);
-      //   if(child && child.length>0){
-      //   child.map((c:any)=>{
-      //     this.childMenu.push(c.children); 
-      //   });
-      // }
-      //   return x;
-      //  }
-      // );
-       console.log(this.childMenu);
+    this.documentService.getMenu().subscribe((data: any) => {
+      this.menus = data.menus;
+      this.childMenu = this.combineChildren(this.menus);
+      console.log(this.childMenu);
     });
   }
 
@@ -68,14 +67,23 @@ export class MenuComponent {
     });
   }
 
-  openMdFile(url:any){
-    debugger;
-    this.homePageLoad =false;
-    this.documentService.onPageLoad.next({IsLoad:true,URL:url});
+  homePage() {
+    this.homePageLoad = false;
   }
-  isload(){
+
+  openMdFile(url: any) {
     debugger;
-    this.homePageLoad=true;
+    this.homePage();
+    this.documentService.onPageLoad.next({ IsLoad: true, URL: url });
+  }
+  isload() {
+    debugger;
+    this.homePageLoad = true;
+  }
+
+  signOut() {
+    sessionStorage.clear();
+    this.authService.signOut();
   }
 }
 
@@ -90,4 +98,3 @@ interface ChildItem {
   url: string;
   image: string;
 }
-

@@ -7,6 +7,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
 import { MarkDownLoadComponent } from "./mark-down-load/mark-down-load.component";
 import { MenuComponent } from "./menu/menu.component";
+import { LoginComponent } from '../login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { MenuComponent } from "./menu/menu.component";
     MarkdownModule.forRoot(),
     HttpClientModule,
     MarkDownLoadComponent,
-    MenuComponent
+    MenuComponent,
+    LoginComponent
 ],
   providers: [],
   bootstrap: [AppComponent]
