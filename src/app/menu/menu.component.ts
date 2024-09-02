@@ -14,6 +14,7 @@ export class MenuComponent {
   ngOnInit(): void {
     debugger;
     this.getMenu();
+    this.documentService.onPageLoad.next({IsLoad:true,URL:'/assets/Documents/Home/home.md'});
   }
   isSubMenuOpen: boolean[] = [];
   constructor(private documentService:DocumentServiceService) {}

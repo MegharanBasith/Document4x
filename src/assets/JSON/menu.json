@@ -2,7 +2,7 @@
   "menus": [
     {
       "title": "Helpdesk",
-      "icon": "fa fa-house",
+      "icon": "fa fa-desktop",
       "children": [
         {
           "title": "Helpdesk Documentation",
@@ -12,6 +12,7 @@
     },
     {
       "title": "Maintenance",
+      "icon": "fa fa-person-digging",
       "children": [
         {
           "title": "Maintenance Admin Login",
@@ -20,16 +21,6 @@
         {
           "title": "Maintenance Supervisor Login",
           "url": "assets/Documents/Mawarid-Maintenance-Documentation/SupervisorLoginDocumentation/SupervisorLoginDocumentation.md"
-        }
-      ]
-    },
-    {
-      "title": "Explore Us",
-      "icon": "fa fa-Home",
-      "children": [
-        {
-          "title": "Home",
-          "url": "/assets/Documents/Home/home.md"
         }
       ]
     }
