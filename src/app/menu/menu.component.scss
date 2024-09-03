@@ -22,18 +22,6 @@ body {
     padding: 30px;
 }
 
-nav#sidebar {
-    float: left;
-    /* background: #d0cbcb45; */
-    color: #000;
-    width: 240px;
-     position: fixed;
-    height: 100vh;
-    overflow: auto;
-    padding: 0px 0px;
-    margin-top: 70px;
-}
-
 nav#sidebar a {
     color: #000;
     width: 100%;
@@ -87,6 +75,7 @@ nav#sidebar li {
 
 .container{
     max-width: 100%;
+    padding: 0;
 }
 
 .navbar-nav img{
@@ -94,9 +83,12 @@ nav#sidebar li {
     border-radius: 20px;
 }
 
-.topnav{
-    position: fixed;
-}
+
 .navbar-brand{
     font-family: 'Metamorphous', cursive; 
+}
+
+.topnav .navbar{
+    padding-left: 25px;
+    padding-right: 25px;
 }
