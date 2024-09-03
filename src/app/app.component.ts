@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'Document';
-  constructor() {}
-  ngOnInit(): void {
-  }  
+  constructor(private router: Router) {
+    router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        debugger;
+        if (event.url != '/' &&JSON.parse(sessionStorage.getItem('CurrentUser')!) != '') 
+        {
+          this.router.navigate(['']);
+        }
+      }
+    });
+  }
+  ngOnInit(): void {}
 }
-

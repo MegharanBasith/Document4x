@@ -12,33 +12,48 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   private router = inject(Router);
   ngOnInit(): void {
-    google.accounts.id.initialize({
-      client_id: '70089408606-9tdkuu4bcrmmt7551m25vlu7snv6u0vm.apps.googleusercontent.com',
-      callback: (res: any) => this.handleLogin(res),
-    });
-
-    google.accounts.id.renderButton(document.getElementById('google-button'),{
-      theme: 'filler_blue',
-      size: 'large',
-      shape:'circular',
-      width:350,
-    });
+    setTimeout(() => {
+      this.googleLogin();
+    }, 10);
   }
 
-  private TokeDecode(token:string){
-     return JSON.parse(atob(token.split(".")[1]));
+  private TokeDecode(token: string) {
+    return JSON.parse(atob(token.split('.')[1]));
   }
 
-  handleLogin(res:any){
-    if(res){
-     //decode the token first
-     const payLoad = this.TokeDecode(res.credential);
-     //store in session
-     sessionStorage.setItem('CurrentUser',JSON.stringify(payLoad))
-     //navigate to 
-     this.router.navigate(['/home'])
+  googleLogin() {
+    if (google!=undefined && google && google?.accounts) {
+      google.accounts.id.initialize({
+        client_id:
+          '70089408606-9tdkuu4bcrmmt7551m25vlu7snv6u0vm.apps.googleusercontent.com',
+        callback: (res: any) => this.handleLogin(res),
+      });
+
+      google.accounts.id.renderButton(
+        document.getElementById('google-button'),
+        {
+          theme: 'filler_blue',
+          size: 'large',
+          shape: 'circular',
+          width: 350,
+        }
+      );
+    }
+    else{
+      setTimeout(() => {
+        this.googleLogin();
+      }, 5);
     }
   }
 
-
+  handleLogin(res: any) {
+    if (res) {
+      //decode the token first
+      const payLoad = this.TokeDecode(res.credential);
+      //store in session
+      sessionStorage.setItem('CurrentUser', JSON.stringify(payLoad));
+      //navigate to
+      this.router.navigate(['/home']);
+    }
+  }
 }
