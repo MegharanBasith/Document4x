@@ -48,7 +48,7 @@ export class MenuComponent {
   homePageLoad: boolean = true;
 
   getMenu() {
-    location.reload();
+    // location.reload();
     this.documentService.getMenu().subscribe((data: any) => {
       this.menus = data.menus;
       this.childMenu = this.combineChildren(this.menus);
