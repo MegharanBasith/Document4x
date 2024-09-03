@@ -20,7 +20,7 @@
                     class="fa fa-home"></i>Home
             </a>
             <li *ngFor="let item of menus; let i = index" class="mb-2">
-                <a href="#" (click)="toggleSubMenu(i)">
+                <a href="javascript:void(0)" (click)="toggleSubMenu(i)">
                     <i style="padding-right: 8px;" class="{{item.icon}}"></i> {{ item.title }}
                     <i style="padding-left: 5px;" *ngIf="item.children && item.children.length > 0"
                         class="fa fa-chevron-down"></i>
