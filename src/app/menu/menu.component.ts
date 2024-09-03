@@ -15,21 +15,24 @@ import { AuthService } from '../../auth.service';
 export class MenuComponent {
   ngOnInit(): void {
     debugger;
+    setTimeout(() => {
+      this.getMenu();
+    }, 2);
     this.getMenu();
   }
   isSubMenuOpen: boolean[] = [];
-  Name:any;
-  Image:any;
+  Name: any;
+  Image: any;
   constructor(
     private documentService: DocumentServiceService,
     private authService: AuthService
   ) {
-    this.Name = JSON.parse(sessionStorage.getItem("CurrentUser")!).name;
-    this.Image = JSON.parse(sessionStorage.getItem("CurrentUser")!).picture;
+    this.Name = JSON.parse(sessionStorage.getItem('CurrentUser')!).name;
+    this.Image = JSON.parse(sessionStorage.getItem('CurrentUser')!).picture;
   }
-  openPanel:boolean=false;
-  openRightMenu(){
-       this.openPanel=!this.openPanel;
+  openPanel: boolean = false;
+  openRightMenu() {
+    this.openPanel = !this.openPanel;
   }
 
   toggleMenu() {
@@ -85,7 +88,7 @@ export class MenuComponent {
   }
 
   signOut() {
-    this.openPanel=false;
+    this.openPanel = false;
     sessionStorage.removeItem('CurrentUser');
     this.authService.signOut();
   }
