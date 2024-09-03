@@ -22,16 +22,18 @@ export class MarkDownLoadComponent {
     });
   }
 
-  @Input() loadPage:boolean =false;
+  isDataLoaded:boolean =false;
   assetsURL: any;
   innerHTML: any;
   loadMarkdown(url: any) {
     this.documentService.loadMarkDown(url).subscribe(
       (markdownContent: any) => {
         this.innerHTML = marked.parse(markdownContent); // Convert Markdown to HTML
+        this.isDataLoaded=true;
       },
       (error) => {
         console.error('Error fetching Markdown file:', error);
+        this.isDataLoaded=false;
       }
     );
   }
