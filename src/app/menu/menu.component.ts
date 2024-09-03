@@ -15,9 +15,7 @@ import { AuthService } from '../../auth.service';
 export class MenuComponent {
   ngOnInit(): void {
     debugger;
-    setTimeout(() => {
-      this.getMenu();
-    }, 2);
+    location.reload();
     this.getMenu();
   }
   isSubMenuOpen: boolean[] = [];
