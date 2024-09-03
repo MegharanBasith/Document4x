@@ -29,7 +29,6 @@ export class MenuComponent {
   }
   openPanel: boolean = false;
   openRightMenu() {
-    location.reload();
     this.openPanel = !this.openPanel;
   }
 
@@ -48,7 +47,6 @@ export class MenuComponent {
   homePageLoad: boolean = true;
 
   getMenu() {
-    // location.reload();
     this.documentService.getMenu().subscribe((data: any) => {
       this.menus = data.menus;
       this.childMenu = this.combineChildren(this.menus);
@@ -78,7 +76,6 @@ export class MenuComponent {
 
   openMdFile(url: any) {
     debugger;
-    location.reload();
     this.homePage();
     this.documentService.onPageLoad.next({ IsLoad: true, URL: url });
   }
@@ -88,7 +85,6 @@ export class MenuComponent {
   }
 
   signOut() {
-    location.reload();
     this.openPanel = false;
     this.homePageLoad=false;
     sessionStorage.removeItem('CurrentUser');
