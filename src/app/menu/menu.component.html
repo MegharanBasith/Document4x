@@ -1,10 +1,23 @@
 <div class="container topnav">
     <nav class="navbar navbar-light bg-light">
         <a href="javascript:void(0)" (click)="isload()" class="navbar-brand"> FTS Document Management</a>
-        <ul class="navbar-nav" (click)="signOut()">
+        <ul class="navbar-nav">
             <li>
                 <a data-bs-toggle="dropdown" href="javascript:void(0)" class="nav-link"><img
                         src="{{Image}}" alt="" class="user-avatar"></a>
+
+                        <a href="javascript:void(0)" class="dropdown-item">
+                            <div class="media">
+                                <img src="{{Image}}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        {{Name}}
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star themecolor"></i></span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
             </li>
         </ul>
     </nav>
