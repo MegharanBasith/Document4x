@@ -88,7 +88,7 @@ export class MenuComponent {
   }
 
   signOut() {
-    this.openPanel=false;
+    this.openPanel=!this.openPanel;
     sessionStorage.removeItem('CurrentUser');
     this.authService.signOut();
   }
