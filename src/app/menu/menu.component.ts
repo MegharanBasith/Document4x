@@ -82,7 +82,7 @@ export class MenuComponent {
   }
 
   signOut() {
-    sessionStorage.clear();
+    sessionStorage.removeItem('CurrentUser');
     this.authService.signOut();
   }
 }
