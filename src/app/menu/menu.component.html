@@ -53,11 +53,17 @@
         </ul>
     </nav>
     <div class="content">
-        @if (homePageLoad) {
+        <ng-container *ngIf="homePageLoad">
+            <dashboard [childMenu]="childMenu" (openMdFile)="homePage()"></dashboard>
+        </ng-container>
+        <ng-container *ngIf="!homePageLoad">
+            <mark-down-load></mark-down-load>
+        </ng-container>
+        <!-- @if (homePageLoad) {
         <dashboard [childMenu]="childMenu" (openMdFile)="homePage()"></dashboard>
         }
         @else {
         <mark-down-load></mark-down-load>
-        }
+        } -->
     </div>
 </div>
