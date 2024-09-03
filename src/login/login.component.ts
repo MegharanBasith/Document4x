@@ -54,7 +54,6 @@ export class LoginComponent implements OnInit {
       sessionStorage.setItem('CurrentUser', JSON.stringify(payLoad));
       //navigate to
       this.router.navigate(['/Home']);
-      location.reload();
     }
   }
 }
