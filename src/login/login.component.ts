@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
       //store in session
       sessionStorage.setItem('CurrentUser', JSON.stringify(payLoad));
       //navigate to
-      this.router.navigate(['/home']);
+      this.router.navigate(['/Home']);
     }
   }
 }

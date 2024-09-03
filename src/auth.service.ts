@@ -11,6 +11,6 @@ export class AuthService {
   private router = inject(Router);
   signOut(){
   google.accounts.id.disableAutoSelect();
-  this.router.navigate(['Login'])
+  this.router.navigate(['/Login'])
   }
 }
