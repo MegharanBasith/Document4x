@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
     router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
         debugger;
-        if (event.url != '/' &&JSON.parse(sessionStorage.getItem('CurrentUser')!) != '') 
+        if (event.url != '/' && event.url != '' &&JSON.parse(sessionStorage.getItem('CurrentUser')!) != '') 
         {
           this.router.navigate(['']);
         }
