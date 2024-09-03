@@ -88,9 +88,9 @@ export class MenuComponent {
   }
 
   signOut() {
+    this.openPanel=false;
     sessionStorage.removeItem('CurrentUser');
     this.authService.signOut();
-    this.openPanel=false;
   }
 }
 
