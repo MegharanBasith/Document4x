@@ -2,7 +2,13 @@
     <nav class="navbar navbar-light bg-light">
         <a href="javascript:void(0)" (click)="isload()" class="navbar-brand"> FTS Document Management</a>
         <ul class="navbar-nav">
-            <div class="dropdown">
+            <li class="nav-item">
+                <a (click)="openRightMenu(!openPanel)" class="nav-link" data-widget="control-sidebar" data-slide="true"
+                    href="#" role="button">
+                    <i class="fas fa-th-large"></i>
+                </a>
+            </li>
+            <!-- <div class="dropdown">
                 <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link show" aria-haspopup="true"
                     aria-expanded="false">
                     <img href="javascript:void(0)" src="{{Image}}" alt="" class="user-avatar"></a>
@@ -18,9 +24,15 @@
                             <i class="fa fa-power-off mr-2 themecolor"></i> Sign out </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </ul>
     </nav>
+    @if (openPanel) {
+    <div class="sidebarRight w3-bar-block w3-border-right">
+        <a href="javascript:void(0)" class="w3-bar-item"><img href="javascript:void(0)" src="{{Image}}" alt=""
+                class="user-avatar"></a>
+    </div>
+    }
 </div>
 
 <div class="wrapper">

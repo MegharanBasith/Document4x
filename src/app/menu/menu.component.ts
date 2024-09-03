@@ -27,7 +27,13 @@ export class MenuComponent {
     this.Name = JSON.parse(sessionStorage.getItem("CurrentUser")!).name;
     this.Image = JSON.parse(sessionStorage.getItem("CurrentUser")!).picture;
   }
-  
+  openPanel:boolean=false;
+  openRightMenu(val:boolean){
+    if(val==true)
+       this.openPanel=true;
+    else
+       this.openPanel=false;
+  }
 
   toggleMenu() {
     document.getElementById('sidebar')?.classList.toggle('active');
@@ -84,6 +90,14 @@ export class MenuComponent {
   signOut() {
     sessionStorage.removeItem('CurrentUser');
     this.authService.signOut();
+  }
+
+    openMenu() {
+        document.getElementById("mySidebar")!.style.display = "block";
+  }
+  
+    closeMenu() {
+    document.getElementById("mySidebar")!.style.display = "none";
   }
 }
 

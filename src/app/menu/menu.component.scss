@@ -92,3 +92,13 @@ nav#sidebar li {
     padding-left: 25px;
     padding-right: 25px;
 }
+
+.sidebarRight{
+    height: 100%;
+    width: 240px;
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    left: auto;
+}
