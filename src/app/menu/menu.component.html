@@ -30,9 +30,8 @@
     @if (openPanel) {
     <div class="sidebarRight w3-bar-block w3-border-right">
         <span>{{Name}}</span>
-        <button type="button" (click)="signOut()"><i class="fa fa-power-off mr-2 themecolor"></i> Sign out</button>
-        <!-- <a href="javascript:void(0)" class="dropdown-item" (click)="signOut()">
-            <i class="fa fa-power-off mr-2 themecolor"></i> Sign out </a> -->
+        <button class="dropdown-item" (click)="signOut()">
+            <i class="fa fa-power-off mr-2"></i> Sign out </button>
     </div>
     }
 </div>
