@@ -4,7 +4,7 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a (click)="openRightMenu(!openPanel)" class="nav-link" data-widget="control-sidebar" data-slide="true"
-                    href="#" role="button">
+                href="javascript:void(0)"  role="button">
                     <i class="fas fa-th-large"></i>
                 </a>
             </li>
@@ -29,7 +29,7 @@
     </nav>
     @if (openPanel) {
     <div class="sidebarRight w3-bar-block w3-border-right">
-        <a href="javascript:void(0)" class="w3-bar-item"><img href="javascript:void(0)" src="{{Image}}" alt=""
+        <a href="javascript:void(0)" class="w3-bar-item"><img src="{{Image}}" alt=""
                 class="user-avatar"></a>
     </div>
     }
