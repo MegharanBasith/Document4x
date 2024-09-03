@@ -26,6 +26,7 @@ export class MarkDownLoadComponent {
   assetsURL: any;
   innerHTML: any;
   loadMarkdown(url: any) {
+    location.reload();
     this.documentService.loadMarkDown(url).subscribe(
       (markdownContent: any) => {
         this.innerHTML = marked.parse(markdownContent); // Convert Markdown to HTML
