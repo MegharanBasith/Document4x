@@ -16,9 +16,9 @@ export class MarkDownLoadComponent {
     debugger;
     this.documentService.onPageLoad.subscribe((x: any) => {
       this.assetsURL = x.URL;
-      if (this.loadPage == true) {
+      // if (this.loadPage == true) {
         this.loadMarkdown(this.assetsURL);
-      }
+      // }
     });
   }
 
