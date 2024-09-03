@@ -90,14 +90,7 @@ export class MenuComponent {
   signOut() {
     sessionStorage.removeItem('CurrentUser');
     this.authService.signOut();
-  }
-
-    openMenu() {
-        document.getElementById("mySidebar")!.style.display = "block";
-  }
-  
-    closeMenu() {
-    document.getElementById("mySidebar")!.style.display = "none";
+    this.openPanel=false;
   }
 }
 
