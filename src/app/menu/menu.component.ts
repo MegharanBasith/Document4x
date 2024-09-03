@@ -28,11 +28,8 @@ export class MenuComponent {
     this.Image = JSON.parse(sessionStorage.getItem("CurrentUser")!).picture;
   }
   openPanel:boolean=false;
-  openRightMenu(val:boolean){
-    if(val==true)
-       this.openPanel=true;
-    else
-       this.openPanel=false;
+  openRightMenu(){
+       this.openPanel=!this.openPanel;
   }
 
   toggleMenu() {
