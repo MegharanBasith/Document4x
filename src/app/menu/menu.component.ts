@@ -17,6 +17,7 @@ export class MenuComponent {
     debugger;
     let data = localStorage.getItem("Reload");
     if(data=="true"){
+      localStorage.setItem('Reload',"false");
       location.reload();
     }
     else{
@@ -56,7 +57,6 @@ export class MenuComponent {
     this.documentService.getMenu().subscribe((data: any) => {
       this.menus = data.menus;
       this.childMenu = this.combineChildren(this.menus);
-      localStorage.setItem('Reload',"false");
       // console.log(this.childMenu);
     });
   }
