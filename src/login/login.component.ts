@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   private router = inject(Router);
   ngOnInit(): void {
+    this.router.navigate(['']);
     setTimeout(() => {
       this.googleLogin();
     }, 10);
