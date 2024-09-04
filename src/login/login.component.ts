@@ -12,10 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   private router = inject(Router);
   ngOnInit(): void {
-   
-    setTimeout(() => {
-      this.googleLogin();
-    }, 10);
+    this.googleLogin();
   }
 
   private TokeDecode(token: string) {
@@ -53,6 +50,7 @@ export class LoginComponent implements OnInit {
       const payLoad = this.TokeDecode(res.credential);
       //store in session
       sessionStorage.setItem('CurrentUser', JSON.stringify(payLoad));
+      localStorage.setItem("Reload","true");
       //navigate to
       this.router.navigate(['/Home']);
     }
