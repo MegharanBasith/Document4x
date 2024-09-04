@@ -95,6 +95,7 @@ export class MenuComponent {
     this.openPanel = false;
     this.homePageLoad=false;
     sessionStorage.removeItem('CurrentUser');
+    localStorage.removeItem('Reload');
     this.authService.signOut();
   }
 }
