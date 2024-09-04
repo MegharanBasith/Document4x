@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   private router = inject(Router);
   ngOnInit(): void {
+   
     setTimeout(() => {
       this.googleLogin();
     }, 10);
@@ -54,7 +55,6 @@ export class LoginComponent implements OnInit {
       sessionStorage.setItem('CurrentUser', JSON.stringify(payLoad));
       //navigate to
       this.router.navigate(['/Home']);
-      location.reload();
     }
   }
 }
