@@ -12,7 +12,6 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   private router = inject(Router);
   ngOnInit(): void {
-    this.router.navigate(['/Home']);
     setTimeout(() => {
       this.googleLogin();
     }, 10);
@@ -39,6 +38,7 @@ export class LoginComponent implements OnInit {
           width: 350,
         }
       );
+      this.router.navigate(['/Home']);
     }
     else{
       setTimeout(() => {
