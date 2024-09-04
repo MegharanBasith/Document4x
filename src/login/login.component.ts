@@ -38,7 +38,6 @@ export class LoginComponent implements OnInit {
           width: 350,
         }
       );
-      this.router.navigate(['/Home']);
     }
     else{
       setTimeout(() => {
