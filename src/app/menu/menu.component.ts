@@ -15,9 +15,15 @@ import { AuthService } from '../../auth.service';
 export class MenuComponent {
   ngOnInit(): void {
     debugger;
-    this.getMenu();
+    this.menus = localStorage.getItem(JSON.parse('Menu'));
+    this.childMenu = localStorage.getItem(JSON.parse('ChildMenu'));
+    if(this.menus.length>0){
+      location.reload();
+    }
   }
   isSubMenuOpen: boolean[] = [];
+  menus:any;
+  childMenu:any;
   Name: any;
   Image: any;
   constructor(
@@ -42,26 +48,7 @@ export class MenuComponent {
 
   htmlContent: string | any = null;
   Directory: any;
-  menus: any[] = [];
-  childMenu: any[] = [];
   homePageLoad: boolean = true;
-
-  getMenu() {
-    this.documentService.getMenu().subscribe((data: any) => {
-      this.menus = data.menus;
-      this.childMenu = this.combineChildren(this.menus);
-      console.log(this.childMenu);
-    });
-  }
-
-  combineChildren(menus: MenuItem[]): ChildItem[] {
-    return menus.reduce((acc, menu) => {
-      if (menu.children && menu.children.length > 0) {
-        acc = acc.concat(menu.children);
-      }
-      return acc;
-    }, [] as ChildItem[]);
-  }
 
   loadLocation() {
     debugger;
@@ -92,14 +79,3 @@ export class MenuComponent {
   }
 }
 
-interface MenuItem {
-  title: string;
-  icon?: string;
-  children?: ChildItem[];
-}
-
-interface ChildItem {
-  title: string;
-  url: string;
-  image: string;
-}
