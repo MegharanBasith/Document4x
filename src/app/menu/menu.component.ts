@@ -24,7 +24,7 @@ export class MenuComponent {
       location.reload();
     }
     else{
-      this.router.navigate(['/login']);
+      // this.router.navigate(['/Login']);
       this.getMenu();
     }
   }

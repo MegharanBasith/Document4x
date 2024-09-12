@@ -13,6 +13,10 @@ export class LoginComponent implements OnInit {
   private router = inject(Router);
   ngOnInit(): void {
     this.googleLogin();
+    let isLogged = sessionStorage.getItem("isLoggedIn");
+    if(isLogged=="true"){
+      this.router.navigate(['/Home']);
+    }
   }
 
   private TokeDecode(token: string) {
