@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { DocumentServiceService } from '../document-service.service';
 import { CommonModule } from '@angular/common';
 import { MarkDownLoadComponent } from '../mark-down-load/mark-down-load.component';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { AuthService } from '../../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -13,14 +14,17 @@ import { AuthService } from '../../auth.service';
   styleUrl: './menu.component.scss',
 })
 export class MenuComponent {
+  private router = inject(Router);
   ngOnInit(): void {
     debugger;
     let data = localStorage.getItem("Reload");
-    if(data=="true"){
+    let isLoggedIn = localStorage.getItem("isLoggedIn");
+    if(isLoggedIn=="true"&&data=="true"){
       localStorage.setItem('Reload',"false");
       location.reload();
     }
     else{
+      this.router.navigate(['/login']);
       this.getMenu();
     }
   }
@@ -29,7 +33,7 @@ export class MenuComponent {
   Image: any;
   constructor(
     private documentService: DocumentServiceService,
-    private authService: AuthService
+    private authService: AuthService,
   ) {
     this.Name = JSON.parse(sessionStorage.getItem('CurrentUser')!).name;
     this.Image = JSON.parse(sessionStorage.getItem('CurrentUser')!).picture;
@@ -96,6 +100,7 @@ export class MenuComponent {
     this.homePageLoad=false;
     sessionStorage.removeItem('CurrentUser');
     localStorage.removeItem('Reload');
+    localStorage.removeItem('isLoggedIn');
     this.authService.signOut();
   }
 }

@@ -51,6 +51,7 @@ export class LoginComponent implements OnInit {
       //store in session
       sessionStorage.setItem('CurrentUser', JSON.stringify(payLoad));
       localStorage.setItem("Reload","true");
+      localStorage.setItem("isLoggedIn","true");
       //navigate to
       this.router.navigate(['/Home']);
     }
