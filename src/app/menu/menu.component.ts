@@ -100,7 +100,7 @@ export class MenuComponent {
     this.homePageLoad=false;
     sessionStorage.removeItem('CurrentUser');
     localStorage.removeItem('Reload');
-    localStorage.removeItem('isLoggedIn');
+    sessionStorage.removeItem('isLoggedIn');
     this.authService.signOut();
   }
 }
