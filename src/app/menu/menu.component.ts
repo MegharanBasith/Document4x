@@ -18,7 +18,7 @@ export class MenuComponent {
   ngOnInit(): void {
     debugger;
     let data = localStorage.getItem("Reload");
-    let isLoggedIn = localStorage.getItem("isLoggedIn");
+    let isLoggedIn = sessionStorage.getItem("isLoggedIn");
     if(isLoggedIn=="true"&&data=="true"){
       localStorage.setItem('Reload',"false");
       location.reload();
@@ -35,8 +35,8 @@ export class MenuComponent {
     private documentService: DocumentServiceService,
     private authService: AuthService,
   ) {
-    this.Name = JSON.parse(sessionStorage.getItem('CurrentUser')!).name;
-    this.Image = JSON.parse(sessionStorage.getItem('CurrentUser')!).picture;
+    // this.Name = JSON.parse(sessionStorage.getItem('CurrentUser')!).name;
+    // this.Image = JSON.parse(sessionStorage.getItem('CurrentUser')!).picture;
   }
   openPanel: boolean = false;
   openRightMenu() {

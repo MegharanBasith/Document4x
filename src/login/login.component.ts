@@ -48,10 +48,10 @@ export class LoginComponent implements OnInit {
     if (res) {
       //decode the token first
       const payLoad = this.TokeDecode(res.credential);
-      localStorage.setItem("isLoggedIn","true");
       //store in session
       sessionStorage.setItem('CurrentUser', JSON.stringify(payLoad));
       localStorage.setItem("Reload","true");
+      sessionStorage.setItem("isLoggedIn","true");
       //navigate to
       this.router.navigate(['/Home']);
     }
