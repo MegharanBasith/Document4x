@@ -33,8 +33,8 @@ export class MenuComponent {
     private authService: AuthService,
     private route:Router
   ) {
-    // this.Name = JSON.parse(sessionStorage.getItem('CurrentUser')!).name;
-    // this.Image = JSON.parse(sessionStorage.getItem('CurrentUser')!).picture;
+    this.Name = JSON.parse(sessionStorage.getItem('CurrentUser')!).name;
+    this.Image = JSON.parse(sessionStorage.getItem('CurrentUser')!).picture;
   }
   openPanel: boolean = false;
   openRightMenu() {
