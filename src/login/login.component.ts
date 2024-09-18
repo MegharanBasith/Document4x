@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         document.getElementById('google-button'),
         {
           theme: 'filler_blue',
-          size: 'large',
+          size: 'medium',
           shape: 'circular',
           
         }
