@@ -4,9 +4,8 @@ import { LoginComponent } from '../login/login.component';
 import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: MenuComponent },
   { path: 'Login', component: LoginComponent },
-  { path: 'Home', component: MenuComponent },
 ];
 
 @NgModule({

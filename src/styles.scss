@@ -9,11 +9,51 @@ img {
 }
 
 nav#sidebar {
-    float: left;
-    color: #000;
-    width: 240px;
-     position: fixed;
-    height: 100vh;
+    // float: left;
+    // color: #000;
+    // width: 240px;
+    //  position: fixed;
+    // height: 100vh;
     overflow: auto;
-    padding: 0px 0px;
+    // padding: 0px 0px;
+}
+.main-sidebar{
+    background-color: #f8f9fa ;
+    position: fixed !important;
+    top: 55px !important;
+}
+.content-wrapper{
+    background: transparent;
+}
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+    .loginBox {
+        width: 90%;  /* Adjust width to 90% on mobile */
+        padding: 15px;
+    }
+    .login-title{
+        margin-bottom: 20px !important;
+    }
+    .text-center h3 {
+        font-size: 1.2em;  /* Reduce the font size for mobile view */
+    }
+
+    .btn-google {
+        width: 195px;
+        font-size: 1em;
+        max-width: 195px;
+    }
+
+    .form-block {
+        padding: 10px 0;
+    }
+
+    /* Adjustments to container and row */
+    .container {
+        padding: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
 }

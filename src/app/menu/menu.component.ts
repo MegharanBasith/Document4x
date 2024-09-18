@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { DocumentServiceService } from '../document-service.service';
 import { CommonModule } from '@angular/common';
 import { MarkDownLoadComponent } from '../mark-down-load/mark-down-load.component';
@@ -14,17 +14,14 @@ import { Router } from '@angular/router';
   styleUrl: './menu.component.scss',
 })
 export class MenuComponent {
-  private router = inject(Router);
   ngOnInit(): void {
     debugger;
     let data = localStorage.getItem("Reload");
-    let isLoggedIn = sessionStorage.getItem("isLoggedIn");
-    if(isLoggedIn=="true"&&data=="true"){
+    if(data=="true"){
       localStorage.setItem('Reload',"false");
       location.reload();
     }
     else{
-      // this.router.navigate(['/Login']);
       this.getMenu();
     }
   }
@@ -34,17 +31,30 @@ export class MenuComponent {
   constructor(
     private documentService: DocumentServiceService,
     private authService: AuthService,
+    private route:Router
   ) {
-    this.Name = JSON.parse(sessionStorage.getItem('CurrentUser')!).name;
-    this.Image = JSON.parse(sessionStorage.getItem('CurrentUser')!).picture;
+    // this.Name = JSON.parse(sessionStorage.getItem('CurrentUser')!).name;
+    // this.Image = JSON.parse(sessionStorage.getItem('CurrentUser')!).picture;
   }
   openPanel: boolean = false;
   openRightMenu() {
     this.openPanel = !this.openPanel;
   }
-
+  toggle:boolean=false;
   toggleMenu() {
-    document.getElementById('sidebar')?.classList.toggle('active');
+    this.toggle = !this.toggle;
+    const sidebarmini = document.getElementById('bodyDiv') as HTMLElement;
+    if (sidebarmini.classList.contains('sidebar-collapse') && sidebarmini.classList.contains('sidebar-closed')) {
+      sidebarmini.classList.remove('sidebar-closed');
+      sidebarmini.classList.remove('sidebar-collapse');
+      sidebarmini.classList.add('sidebar-open');
+      // sidebarmini.classList.toggle('sidebar-open');
+    }else{
+      sidebarmini.classList.remove('sidebar-open');
+      sidebarmini.classList.add('sidebar-closed');
+      sidebarmini.classList.add('sidebar-collapse');
+      // sidebarmini.classList.toggle('sidebar-closed .sidebar-collapse');
+    }
   }
 
   toggleSubMenu(index: number) {
@@ -61,7 +71,6 @@ export class MenuComponent {
     this.documentService.getMenu().subscribe((data: any) => {
       this.menus = data.menus;
       this.childMenu = this.combineChildren(this.menus);
-      // console.log(this.childMenu);
     });
   }
 
@@ -84,10 +93,12 @@ export class MenuComponent {
   homePage() {
     this.homePageLoad = false;
   }
-
+  selectedUrl:any=null;
   openMdFile(url: any) {
     debugger;
     this.homePage();
+    this.toggleMenu();
+    this.selectedUrl = url;
     this.documentService.onPageLoad.next({ IsLoad: true, URL: url });
   }
   isload() {
@@ -102,6 +113,7 @@ export class MenuComponent {
     localStorage.removeItem('Reload');
     sessionStorage.removeItem('isLoggedIn');
     this.authService.signOut();
+    this.route.navigate(['/login'])
   }
 }
 

@@ -1,13 +1,28 @@
 <div class="container topnav">
     <nav class="navbar navbar-light bg-light">
+        <a class="nav-link" href="javascript:void(0)" role="button" data-widget="pushmenu" (click)="toggleMenu()">
+            <i class="fas fa-bars" style="font-size: 20px;"></i></a>
         <a href="javascript:void(0)" (click)="isload()" class="navbar-brand"> FTS Document Management</a>
+        <!-- @if(DevMode){
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a (click)="openRightMenu()" class="nav-link" data-widget="control-sidebar" data-slide="true"
-                    href="javascript:void(0)" role="button">
-                    <img src="{{Image}}" alt="" class="user-avatar">
+                <a href="https://github.com/MegharanBasith/Document4xArco" target="_blank" class="nav-link"
+                    data-widget="control-sidebar" data-slide="true">
+                    <i class="fa-regular fa-pen-to-square"></i>
                 </a>
             </li>
+        </ul>
+        } -->
+        <ul class="navbar-nav">
+            <div style="display: flex;align-items: center;">
+                <li class="nav-item">
+                    <a (click)="openRightMenu()" class="nav-link" data-widget="control-sidebar" data-slide="true"
+                        href="javascript:void(0)" role="button">
+                        <img src="{{Image}}" alt="" class="user-avatar">
+                    </a>
+                </li>
+            </div>
+           
         </ul>
     </nav>
     @if (openPanel) {
@@ -27,32 +42,31 @@
 </div>
 
 <div class="wrapper">
-    <nav id="sidebar" class="sidebar">
-        <div (click)="toggleMenu()">
-
-        </div>
-        <ul class="menu list-unstyled">
-            <a href="javascript:void(0)" (click)="isload()"><i style="padding-right: 8px;padding-bottom: 10px;"
-                    class="fa fa-home"></i>Home
-            </a>
-            <li *ngFor="let item of menus; let i = index" class="mb-2">
-                <a href="javascript:void(0)" (click)="toggleSubMenu(i)">
-                    <i style="padding-right: 8px;" class="{{item.icon}}"></i> {{ item.title }}
-                    <i style="padding-left: 5px;" *ngIf="item.children && item.children.length > 0"
-                        class="fa fa-chevron-down"></i>
+    <aside class="main-sidebar">
+        <nav id="sidebar" class="navbar">
+            <ul class="navbar-nav nav-sidebar flex-column">
+                <a href="javascript:void(0)" (click)="isload()"><i style="padding-right: 8px;padding-bottom: 10px;"
+                        class="fa fa-home"></i>Home
                 </a>
-                <ul id="menu{{ i }}" [ngClass]="{'collapse': !isSubMenuOpen[i]}" class="list-unstyled ms-3 mt-2"
-                    *ngIf="item.children && item.children.length > 0">
-                    <li *ngFor="let child of item.children" class="mb-1">
-                        <a (click)="openMdFile(child.url)">
-                            {{ child.title }}
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <div class="content">
+                <li *ngFor="let item of menus; let i = index" class="mb-2 nav-item">
+                    <a class="nav-link" href="javascript:void(0)" (click)="toggleSubMenu(i)">
+                        <i style="padding-right: 8px;" class="{{item.icon}}"></i> {{ item.title }}
+                        <i style="padding-left: 5px;" *ngIf="item.children && item.children.length > 0"
+                            class="fa" [ngClass]="{'fa-chevron-down':isSubMenuOpen[i],'fa-chevron-right':!isSubMenuOpen[i]}"></i>
+                    </a>
+                    <ul id="menu{{i}}" [ngClass]="{'collapse': !isSubMenuOpen[i]}" class="navbar ms-3 mt-2"
+                        *ngIf="item.children && item.children.length > 0">
+                        <li *ngFor="let child of item.children" class="mb-1 nav-item" [ngClass]="{'active':selectedUrl == child.url}">
+                            <a class="nav-link" (click)="openMdFile(child.url)">
+                                {{ child.title }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="content content-wrapper">
         <ng-container *ngIf="homePageLoad">
             <dashboard [childMenu]="childMenu" (openMdFile)="homePage()"></dashboard>
         </ng-container>

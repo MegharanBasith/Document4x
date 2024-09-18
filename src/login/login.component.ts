@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
     this.googleLogin();
     let isLogged = sessionStorage.getItem("isLoggedIn");
     if(isLogged=="true"){
-      this.router.navigate(['/Home']);
+      this.router.navigate(['/']);
     }
   }
 
@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
           theme: 'filler_blue',
           size: 'large',
           shape: 'circular',
-          width: 350,
+          
         }
       );
     }
@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem("Reload","true");
       sessionStorage.setItem("isLoggedIn","true");
       //navigate to
-      this.router.navigate(['/Home']);
+      this.router.navigate(['/']);
     }
   }
 }
