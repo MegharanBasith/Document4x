@@ -26,6 +26,14 @@ nav#sidebar {
     background: transparent;
 }
 /* Mobile view */
+@media only screen and (min-width: 768px) {
+    .btn-google {
+        iframe{
+            margin: 0 auto !important;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .loginBox {
         width: 90%;  /* Adjust width to 90% on mobile */
