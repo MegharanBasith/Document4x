@@ -35,7 +35,6 @@ export class MarkDownLoadComponent {
       if (routingData) {
         let data = JSON.parse(routingData);
         let filteredMenuData = data.filter((x: any) => x.routeUrl === this.routeUrl);
-        console.log('Filtered Data:', filteredMenuData);
         if (filteredMenuData.length > 0) {
           this.loadMarkdown(filteredMenuData[0].url);
         } else {
