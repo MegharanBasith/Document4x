@@ -10,12 +10,18 @@ import { Router } from '@angular/router';
   styleUrl: './dashboard.component.scss',
 })
 export class DashboardComponent {
-  constructor(private route:Router ) {
-    let data = sessionStorage.getItem("childMenu")!;
-    this.childMenu = JSON.parse(data)
+  constructor(private route: Router) {
+    let data = localStorage.getItem('Reload');
+    if (data == 'true') {
+      localStorage.setItem('Reload', 'false');
+      location.reload();
+    } else {
+      let data = sessionStorage.getItem('childMenu')!;
+      this.childMenu = JSON.parse(data);
+    }
   }
   childMenu: any;
-  openTileLink(data:any){
+  openTileLink(data: any) {
     this.route.navigate([`/Docs/${data.routeUrl}`]);
   }
 }
