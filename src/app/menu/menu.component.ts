@@ -113,7 +113,7 @@ export class MenuComponent {
     localStorage.removeItem('Reload');
     sessionStorage.removeItem('isLoggedIn');
     this.authService.signOut();
-    this.route.navigate(['/login'])
+    this.route.navigate(['/Login'])
   }
 }
 
