@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { DocumentServiceService } from '../app/document-service.service';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'dashboard',
@@ -10,11 +10,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './dashboard.component.scss',
 })
 export class DashboardComponent {
-  constructor(private documentService: DocumentServiceService) {}
-  @Input() childMenu: any;
-  @Output() openMdFile = new EventEmitter<{ data?: boolean }>();
-  openTileLink(url:any){
-    this.openMdFile.emit({ data:false });
-    this.documentService.onPageLoad.next({ IsLoad: true, URL: url });
+  constructor(private route:Router ) {
+    let data = sessionStorage.getItem("childMenu")!;
+    this.childMenu = JSON.parse(data); 
+  }
+  childMenu: any;
+  openTileLink(data:any){
+    this.route.navigate([`/Docs/${data.routeUrl}`]);
   }
 }

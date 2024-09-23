@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
     this.googleLogin();
     let isLogged = sessionStorage.getItem("isLoggedIn");
     if(isLogged=="true"){
-      this.router.navigate(['/']);
+      this.router.navigate(['/Dashboard']);
     }
   }
 
@@ -50,14 +50,11 @@ export class LoginComponent implements OnInit {
 
   handleLogin(res: any) {
     if (res) {
-      //decode the token first
       const payLoad = this.TokeDecode(res.credential);
-      //store in session
       sessionStorage.setItem('CurrentUser', JSON.stringify(payLoad));
       localStorage.setItem("Reload","true");
       sessionStorage.setItem("isLoggedIn","true");
-      //navigate to
-      this.router.navigate(['/']);
+      this.router.navigate(['/Dashboard']);
     }
   }
 }

@@ -4,12 +4,12 @@ import { CommonModule } from '@angular/common';
 import { MarkDownLoadComponent } from '../mark-down-load/mark-down-load.component';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { AuthService } from '../../auth.service';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, MarkDownLoadComponent, DashboardComponent],
+  imports: [CommonModule, MarkDownLoadComponent, DashboardComponent,RouterModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
 })
@@ -48,12 +48,10 @@ export class MenuComponent {
       sidebarmini.classList.remove('sidebar-closed');
       sidebarmini.classList.remove('sidebar-collapse');
       sidebarmini.classList.add('sidebar-open');
-      // sidebarmini.classList.toggle('sidebar-open');
     }else{
       sidebarmini.classList.remove('sidebar-open');
       sidebarmini.classList.add('sidebar-closed');
       sidebarmini.classList.add('sidebar-collapse');
-      // sidebarmini.classList.toggle('sidebar-closed .sidebar-collapse');
     }
   }
 
@@ -71,6 +69,8 @@ export class MenuComponent {
     this.documentService.getMenu().subscribe((data: any) => {
       this.menus = data.menus;
       this.childMenu = this.combineChildren(this.menus);
+      sessionStorage.removeItem("childMenu");
+      sessionStorage.setItem("childMenu",JSON.stringify(this.childMenu));
     });
   }
 
@@ -94,16 +94,16 @@ export class MenuComponent {
     this.homePageLoad = false;
   }
   selectedUrl:any=null;
-  openMdFile(url: any) {
+  openMdFile(data: any) {
     debugger;
-    this.homePage();
+    this.selectedUrl=data.routeUrl;
     this.toggleMenu();
-    this.selectedUrl = url;
-    this.documentService.onPageLoad.next({ IsLoad: true, URL: url });
+    this.route.navigate([`/Docs/${data.routeUrl}`]);
   }
   isload() {
     debugger;
-    this.homePageLoad = true;
+    this.toggleMenu();
+    this.route.navigate(['/Dashboard'])
   }
 
   signOut() {

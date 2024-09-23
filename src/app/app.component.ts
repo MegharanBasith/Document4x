@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
      this.isVisible=true;
     }
     else{
-     this.route.navigate(['/'])
+     this.route.navigate(['/Dashboard'])
     }
    }
   ngOnInit(): void {}

@@ -5,9 +5,10 @@
       "icon": "fa fa-desktop",
       "children": [
         {
-          "title": "Helpdesk Documentation",
+          "title": "About Helpdesk",
           "url": "/assets/Documents/Mawarid-helpdesk-documentation/MawaridHelpdeskDocumentation.md",
-          "image":"https://cdn-icons-png.flaticon.com/128/4969/4969093.png"
+          "image":"https://cdn-icons-png.flaticon.com/128/4969/4969093.png",
+          "routeUrl":"MawaridHelpdeskDocumentation"
         }
       ]
     },
@@ -16,14 +17,17 @@
       "icon": "fa fa-person-digging",
       "children": [
         {
-          "title": "Maintenance Admin Login Documentation",
+          "title": "Admin Login",
           "url": "/assets/Documents/Mawarid-Maintenance-Documentation/AdminLoginDocumentation/AdminLoginDocumentation.md",
-           "image":"https://cdn-icons-png.flaticon.com/128/12263/12263199.png"
+           "image":"https://cdn-icons-png.flaticon.com/128/12263/12263199.png",
+          "routeUrl":"AdminLoginDocumentation"
+
         },
         {
-          "title": "Maintenance Supervisor Login Documentation",
+          "title": "Supervisor Login",
           "url": "assets/Documents/Mawarid-Maintenance-Documentation/SupervisorLoginDocumentation/SupervisorLoginDocumentation.md",
-          "image":"https://cdn-icons-png.flaticon.com/128/9787/9787450.png"
+          "image":"https://cdn-icons-png.flaticon.com/128/9787/9787450.png",
+          "routeUrl":"SupervisorLoginDocumentation"
         }
       ]
     }
