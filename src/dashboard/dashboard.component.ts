@@ -12,7 +12,8 @@ import { Router } from '@angular/router';
 export class DashboardComponent {
   constructor(private route:Router ) {
     let data = sessionStorage.getItem("childMenu")!;
-    this.childMenu = JSON.parse(data); 
+    this.childMenu = JSON.parse(data).setTimeout(() => {
+    }, 1000);; 
   }
   childMenu: any;
   openTileLink(data:any){
