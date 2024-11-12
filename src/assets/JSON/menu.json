@@ -30,6 +30,12 @@
           "routeUrl":"SupervisorLoginDocumentation"
         }
       ]
+    },
+    {
+      "title": "BCP",
+      "icon": "fa fa-person-digging",
+      "children": [
+      ]
     }
   ]
 }
