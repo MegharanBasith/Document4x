@@ -35,6 +35,12 @@
       "title": "BCP",
       "icon": "fa fa-person-digging",
       "children": [
+        {
+          "title": "Dashboard",
+          "url":"/assets/Documents/Document-Management-System/Dashboard.md",
+          "image":"https://www.flaticon.com/free-icon/dashboard_6820955.png",
+          "routeUrl":"Dashboard"
+        }
       ]
     }
   ]
