@@ -32,8 +32,8 @@
       ]
     },
     {
-      "title": "BCP",
-      "icon": "fa fa-person-digging",
+      "title": "Document Management System",
+      "icon": "fa-solid fa-book",
       "children": [
         {
           "title": "Dashboard",
