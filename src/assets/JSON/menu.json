@@ -38,8 +38,32 @@
         {
           "title": "Dashboard",
           "url":"/assets/Documents/Document-Management-System/Dashboard.md",
-          "image":"https://www.flaticon.com/free-icon/dashboard_6820955.png",
+          "image":"https://cdn-icons-png.flaticon.com/128/10397/10397171.png",
           "routeUrl":"Dashboard"
+        },
+        {
+          "title": "Templates",
+          "url":"/assets/Documents/Document-Management-System/Templates.md",
+          "image":"https://cdn-icons-png.flaticon.com/128/6863/6863985.png",
+          "routeUrl":"Templates"
+        },
+        {
+          "title": "My Requests",
+          "url":"/assets/Documents/Document-Management-System/My Requests.md",
+          "image":"https://cdn-icons-png.flaticon.com/128/17616/17616280.png",
+          "routeUrl":"MyRequests"
+        },
+        {
+          "title": "My Approvals",
+          "url":"/assets/Documents/Document-Management-System/My Approvals.md",
+          "image":"https://cdn-icons-png.flaticon.com/128/5442/5442020.png",
+          "routeUrl":"MyApprovals"
+        },
+        {
+          "title": "System",
+          "url":"/assets/Documents/Document-Management-System/System.md",
+          "image":"https://cdn-icons-png.flaticon.com/128/17003/17003310.png",
+          "routeUrl":"System"
         }
       ]
     }
