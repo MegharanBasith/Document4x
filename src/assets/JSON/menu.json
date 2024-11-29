@@ -66,6 +66,48 @@
           "routeUrl":"System"
         }
       ]
+    },
+    {
+      "title": "Coordinator Portal",
+      "icon": "fa-solid fa-users-rectangle",
+      "children": [
+        {
+          "title": "My Customer & Projects",
+          "url": "/assets/Documents/Coordinator-Portal/My Customer & Projects.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/3749/3749770.png",
+          "routeUrl": "MyCustomer&Projects"
+        },
+        {
+          "title": "Requests",
+          "url": "/assets/Documents/Coordinator-Portal/Requests.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/2003/2003257.png",
+          "routeUrl": "Requests"
+        },
+        {
+          "title": "Report & Inquiries",
+          "url": "/assets/Documents/Coordinator-Portal/Report & Inquiries.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/9095/9095902.png",
+          "routeUrl": "Report&Inquiries"
+        },
+        {
+          "title": "Timesheet",
+          "url": "/assets/Documents/Coordinator-Portal/Timesheet.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/1048/1048953.png",
+          "routeUrl": "Timesheet"
+        },
+        {
+          "title": "Security",
+          "url": "/assets/Documents/Coordinator-Portal/Security.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/1691/1691940.png",
+          "routeUrl": "Security"
+        },
+        {
+          "title": "Master",
+          "url": "/assets/Documents/Coordinator-Portal/Master.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/868/868795.png",
+          "routeUrl": "Master"
+        }
+      ]
     }
   ]
 }
