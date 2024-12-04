@@ -132,10 +132,10 @@
           "routeUrl": "SteeringCommittee"
         },
         {
-          "title": "Master",
-          "url": "/assets/Documents/Software-Development-Request-Documentation/Master.md",
+          "title": "Masters",
+          "url": "/assets/Documents/Software-Development-Request-Documentation/Masters.md",
           "image": "https://cdn-icons-png.flaticon.com/128/7928/7928638.png",
-          "routeUrl": "Master"
+          "routeUrl": "Masters"
         }
       ]
     }
