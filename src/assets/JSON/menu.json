@@ -39,6 +39,30 @@
           "url": "/assets/Documents/Facility-Management-System-Documentation/Maintenance-Report.md",
           "image": "https://cdn-icons-png.flaticon.com/128/9824/9824404.png",
           "routeUrl": "MaintenanceReport"
+        },
+        {
+          "title": "Security",
+          "url": "/assets/Documents/Facility-Management-System-Documentation/Maintenance-Security.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/1691/1691940.png",
+          "routeUrl": "MaintenanceSecurity"
+        }
+      ]
+    },
+    {
+      "title": "Maintenance Technician",
+      "icon": "fa fa-person-digging",
+      "children": [
+        {
+          "title": "Technician's Work",
+          "url": "/assets/Documents/Facility-Management-System-Documentation/Maintenance-Technician's-Work.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/15220/15220391.png",
+          "routeUrl": "MaintenanceTechnician'sWork"
+        },
+        {
+          "title": "My Task",
+          "url": "/assets/Documents/Facility-Management-System-Documentation/Maintenance-Tech-My-Task.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/4133/4133572.png",
+          "routeUrl": "MaintenanceTechMyTask"
         }
       ]
     },
