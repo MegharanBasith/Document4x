@@ -173,6 +173,30 @@
           "routeUrl": "Masters"
         }
       ]
-    }
+    },
+    {
+      "title": "Candidate Acceptance System",
+      "icon": "fa-solid fa-user-tie",
+      "children": [
+          {
+              "title": "Master",
+              "url": "/assets/Documents/CAS-Documentation/CAS-Master.md",
+              "image": "https://cdn-icons-png.flaticon.com/128/7928/7928638.png",
+              "routeurl": "CASMaster"
+          },
+          {
+            "title": "Agent",
+            "url": "/assets/Documents/CAS-Documentation/CAS-Agent.md",
+            "image": "https://cdn-icons-png.flaticon.com/128/998/998393.png",
+            "routeurl": "CASAgent"
+          },
+          {
+            "title": "Candidate",
+            "url": "/assets/Documents/CAS-Documentation/CAS-Candidate.md",
+            "image": "https://cdn-icons-png.flaticon.com/128/3135/3135742.png",
+            "routeurl": "CASCandidate"
+        }
+      ]
+  }
   ]
 }
