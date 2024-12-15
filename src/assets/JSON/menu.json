@@ -17,17 +17,29 @@
       "icon": "fa fa-person-digging",
       "children": [
         {
-          "title": "Admin Login",
-          "url": "/assets/Documents/Mawarid-Maintenance-Documentation/AdminLoginDocumentation/AdminLoginDocumentation.md",
-           "image":"https://cdn-icons-png.flaticon.com/128/12263/12263199.png",
-          "routeUrl":"AdminLoginDocumentation"
+          "title": "Master",
+          "url": "/assets/Documents/Facility-Management-System-Documentation/Maintenance-Master.md",
+           "image":"https://cdn-icons-png.flaticon.com/128/868/868795.png",
+          "routeUrl":"MaintenanceMaster"
 
         },
         {
-          "title": "Supervisor Login",
-          "url": "assets/Documents/Mawarid-Maintenance-Documentation/SupervisorLoginDocumentation/SupervisorLoginDocumentation.md",
-          "image":"https://cdn-icons-png.flaticon.com/128/9787/9787450.png",
-          "routeUrl":"SupervisorLoginDocumentation"
+          "title": "Setup",
+          "url": "/assets/Documents/Facility-Management-System-Documentation/Maintenance-Setup.md",
+          "image":"https://cdn-icons-png.flaticon.com/128/3649/3649387.png",
+          "routeUrl":"MaintenanceSetup"
+        },
+        {
+          "title": "Work",
+          "url": "/assets/Documents/Facility-Management-System-Documentation/Maintenance-Work.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/3264/3264753.png",
+          "routeUrl": "MaintenanceWork"
+        },
+        {
+          "title": "Report",
+          "url": "/assets/Documents/Facility-Management-System-Documentation/Maintenance-Report.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/9824/9824404.png",
+          "routeUrl": "MaintenanceReport"
         }
       ]
     },
