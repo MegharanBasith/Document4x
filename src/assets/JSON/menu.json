@@ -228,7 +228,7 @@
       "children": [
         {
           "title": "Overview",
-          "url": "/assets/Documents/SelfService/SelfServieOverview.md",
+          "url": "/assets/Documents/SelfService/SelfServiceOverview.md",
           "image": "https://cdn-icons-png.flaticon.com/128/5334/5334812.png",
           "routeurl": "SelfServieOverview"
         }
@@ -236,3 +236,4 @@
     }
   ]
 }
+
