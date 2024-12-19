@@ -213,6 +213,12 @@
           "url": "/assets/Documents/CAS-Documentation/CAS-Online-Test.md",
           "image": "https://cdn-icons-png.flaticon.com/128/14670/14670435.png",
           "routeurl": "CASOnlineTest"
+        },
+        {
+          "title": "Travel",
+          "url": "/assets/Documents/CAS-Documentation/CAS-Travel.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/2200/2200326.png",
+          "routeurl": "CASTravel"
         }
       ]
     }
