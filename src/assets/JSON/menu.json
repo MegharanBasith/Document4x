@@ -182,43 +182,43 @@
           "title": "Master",
           "url": "/assets/Documents/CAS-Documentation/CAS-Master.md",
           "image": "https://cdn-icons-png.flaticon.com/128/7928/7928638.png",
-          "routeurl": "CASMaster"
+          "routeUrl": "CASMaster"
         },
         {
           "title": "Agent",
           "url": "/assets/Documents/CAS-Documentation/CAS-Agent.md",
           "image": "https://cdn-icons-png.flaticon.com/128/998/998393.png",
-          "routeurl": "CASAgent"
+          "routeUrl": "CASAgent"
         },
         {
           "title": "Candidate",
           "url": "/assets/Documents/CAS-Documentation/CAS-Candidate.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3135/3135742.png",
-          "routeurl": "CASCandidate"
+          "routeUrl": "CASCandidate"
         },
         {
           "title": "Recruitment Project",
           "url": "/assets/Documents/CAS-Documentation/CAS-Recruitment-Project.md",
           "image": "https://cdn-icons-png.flaticon.com/128/15757/15757011.png",
-          "routeurl": "CASRecruitmentProject"
+          "routeUrl": "CASRecruitmentProject"
         },
         {
           "title": "Interview",
           "url": "/assets/Documents/CAS-Documentation/CAS-Interview.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3454/3454898.png",
-          "routeurl": "CASInterview"
+          "routeUrl": "CASInterview"
         },
         {
           "title": "Online Test",
           "url": "/assets/Documents/CAS-Documentation/CAS-Online-Test.md",
           "image": "https://cdn-icons-png.flaticon.com/128/14670/14670435.png",
-          "routeurl": "CASOnlineTest"
+          "routeUrl": "CASOnlineTest"
         },
         {
           "title": "Travel",
           "url": "/assets/Documents/CAS-Documentation/CAS-Travel.md",
           "image": "https://cdn-icons-png.flaticon.com/128/2200/2200326.png",
-          "routeurl": "CASTravel"
+          "routeUrl": "CASTravel"
         }
       ]
     },
