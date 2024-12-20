@@ -242,31 +242,31 @@
           "title": "Recruitment Project",
           "url": "/assets/Documents/Agent-Portal/AG-Recruitment-Project.md",
           "image": "https://cdn-icons-png.flaticon.com/128/2083/2083461.png",
-          "routeurl": "AGRecruitmentProject"
+          "routeUrl": "AGRecruitmentProject"
         },
         {
           "title": "Application",
           "url": "/assets/Documents/Agent-Portal/AG-Application.md",
           "image": "https://cdn-icons-png.flaticon.com/128/942/942748.png",
-          "routeurl": "AGApplication"
+          "routeUrl": "AGApplication"
         },
         {
           "title": "Interview",
           "url": "/assets/Documents/Agent-Portal/AG-Interview.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3135/3135714.png",
-          "routeurl": "AGInterview"
+          "routeUrl": "AGInterview"
         },
         {
           "title": "Flight Plan",
           "url": "/assets/Documents/Agent-Portal/AG-Flight-Plan.md",
           "image": "https://cdn-icons-png.flaticon.com/128/11815/11815773.png",
-          "routeurl": "AGFlightPlan"
+          "routeUrl": "AGFlightPlan"
         },
         {
           "title": "Requests",
           "url": "/assets/Documents/Agent-Portal/AG-Requests.md",
           "image": "https://cdn-icons-png.flaticon.com/128/2530/2530563.png",
-          "routeurl": "AGRequests"
+          "routeUrl": "AGRequests"
         }
       ]
     }
