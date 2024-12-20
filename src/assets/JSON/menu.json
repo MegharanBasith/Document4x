@@ -182,43 +182,43 @@
           "title": "Master",
           "url": "/assets/Documents/CAS-Documentation/CAS-Master.md",
           "image": "https://cdn-icons-png.flaticon.com/128/7928/7928638.png",
-          "routeurl": "CASMaster"
+          "routeUrl": "CASMaster"
         },
         {
           "title": "Agent",
           "url": "/assets/Documents/CAS-Documentation/CAS-Agent.md",
           "image": "https://cdn-icons-png.flaticon.com/128/998/998393.png",
-          "routeurl": "CASAgent"
+          "routeUrl": "CASAgent"
         },
         {
           "title": "Candidate",
           "url": "/assets/Documents/CAS-Documentation/CAS-Candidate.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3135/3135742.png",
-          "routeurl": "CASCandidate"
+          "routeUrl": "CASCandidate"
         },
         {
           "title": "Recruitment Project",
           "url": "/assets/Documents/CAS-Documentation/CAS-Recruitment-Project.md",
           "image": "https://cdn-icons-png.flaticon.com/128/15757/15757011.png",
-          "routeurl": "CASRecruitmentProject"
+          "routeUrl": "CASRecruitmentProject"
         },
         {
           "title": "Interview",
           "url": "/assets/Documents/CAS-Documentation/CAS-Interview.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3454/3454898.png",
-          "routeurl": "CASInterview"
+          "routeUrl": "CASInterview"
         },
         {
           "title": "Online Test",
           "url": "/assets/Documents/CAS-Documentation/CAS-Online-Test.md",
           "image": "https://cdn-icons-png.flaticon.com/128/14670/14670435.png",
-          "routeurl": "CASOnlineTest"
+          "routeUrl": "CASOnlineTest"
         },
         {
           "title": "Travel",
           "url": "/assets/Documents/CAS-Documentation/CAS-Travel.md",
           "image": "https://cdn-icons-png.flaticon.com/128/2200/2200326.png",
-          "routeurl": "CASTravel"
+          "routeUrl": "CASTravel"
         }
       ]
     },
@@ -242,31 +242,66 @@
           "title": "Recruitment Project",
           "url": "/assets/Documents/Agent-Portal/AG-Recruitment-Project.md",
           "image": "https://cdn-icons-png.flaticon.com/128/2083/2083461.png",
-          "routeurl": "AGRecruitmentProject"
+          "routeUrl": "AGRecruitmentProject"
         },
         {
           "title": "Application",
           "url": "/assets/Documents/Agent-Portal/AG-Application.md",
           "image": "https://cdn-icons-png.flaticon.com/128/942/942748.png",
-          "routeurl": "AGApplication"
+          "routeUrl": "AGApplication"
         },
         {
           "title": "Interview",
           "url": "/assets/Documents/Agent-Portal/AG-Interview.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3135/3135714.png",
-          "routeurl": "AGInterview"
+          "routeUrl": "AGInterview"
         },
         {
           "title": "Flight Plan",
           "url": "/assets/Documents/Agent-Portal/AG-Flight-Plan.md",
           "image": "https://cdn-icons-png.flaticon.com/128/11815/11815773.png",
-          "routeurl": "AGFlightPlan"
+          "routeUrl": "AGFlightPlan"
         },
         {
           "title": "Requests",
           "url": "/assets/Documents/Agent-Portal/AG-Requests.md",
           "image": "https://cdn-icons-png.flaticon.com/128/2530/2530563.png",
-          "routeurl": "AGRequests"
+          "routeUrl": "AGRequests"
+        }
+      ]
+    },
+    {
+      "title": "Airport Portal",
+      "icon": "fa-solid fa-plane-departure",
+      "children": [
+        {
+          "title": "Airport Reception",
+          "url": "/assets/Documents/Airport-Portal/AP-Aiport-Reception.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/3284/3284697.png",
+          "routeUrl": "APAirportReception"
+        },
+        {
+          "title": "Accomodation Reception",
+          "url": "/assets/Documents/Airport-Portal/AP-Accomodation-Reception.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/4699/4699274.png",
+          "routeUrl": "APAccomodationReception"
+        },
+        {
+          "title": "Not Arrived",
+          "url": "/assets/Documents/Airport-Portal/AP-Not-Arrived.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/16553/16553168.png",
+          "routeUrl": "APNotArrived"
+        },
+        {
+          "title": "Escaped",
+          "url": "/assets/Documents/Airport-Portal/AP-Escaped.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/10911/10911958.png",
+          "routeUrl": "APEscaped"
+        },{
+          "title": "Received By Customer",
+          "url": "/assets/Documents/Airport-Portal/AP-Received-By-Customer.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/9119/9119160.png",
+          "routeUrl": "APReceivedByCustomer"
         }
       ]
     }
