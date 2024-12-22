@@ -304,6 +304,66 @@
           "routeUrl": "APReceivedByCustomer"
         }
       ]
+    },
+    {
+      "title": "Employee Portal",
+      "icon": "fa-solid fa-user-tie",
+      "children": [
+       {
+          "title": "Employee Portal",
+          "url": "/assets/Documents/Employee-Portal/Employee-Portal.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/17930/17930746.png",
+          "routeUrl": "EmployeePortal"
+        }
+      ]
+    },
+    {
+      "title": "BCP Portal",
+      "icon": "fa-solid fa-user-tie",
+      "children": [
+       {
+          "title": "Create Request",
+          "url": "/assets/Documents/BCP-Portal/BCP-Create-Request.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/17616/17616280.png",
+          "routeUrl": "BCPCreateRequest"
+        },
+        {
+          "title": "Iqama Expiry",
+          "url": "/assets/Documents/BCP-Portal/BCP-Iqama-Expiry.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/11078/11078504.png",
+          "routeUrl": "BCPIqamaExpiry"
+        },
+        {
+          "title": "Requests",
+          "url": "/assets/Documents/BCP-Portal/BCP-Requests.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/1573/1573496.png",
+          "routeUrl": "BCPRequests"
+        },
+        {
+          "title": "Reports",
+          "url": "/assets/Documents/BCP-Portal/BCP-Reports.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/3270/3270753.png",
+          "routeUrl": "BCPReports"
+        },
+        {
+          "title": "Time Sheet",
+          "url": "/assets/Documents/BCP-Portal/BCP-TimeSheet.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/1048/1048953.png",
+          "routeUrl": "BCPTimeSheet"
+        },
+        {
+          "title": "Interview Process",
+          "url": "/assets/Documents/BCP-Portal/BCP-Interview-Process.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/14965/14965511.png",
+          "routeUrl": "BCPInterviewProcess"
+        },
+        {
+          "title": "Security",
+          "url": "/assets/Documents/BCP-Portal/BCP-Security.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/4744/4744315.png",
+          "routeUrl": "BCPSecurity"
+        }
+      ]
     }
   ]
 }

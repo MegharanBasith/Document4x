@@ -6,7 +6,7 @@
 
 ## **[Steering Committee](#software-development-request)**
 
-| [Pending Approvals](#pending-approvals) | [All Requests](#all-requests) |
+| [Pending Approvals](#pending-approvals) | [All Requests](#all-requests) | [All Project](#all-projects) |
 
 <br>
 
@@ -25,3 +25,7 @@
 - **Hold Projects -** Only Steering committee can hold the project and active later, only when the request status is in approved and project status is in queue or active. 
 
 - **Release from Hold -** When release the project from hold, steering should update the End date and the priority of the project.
+
+> ## **[All Projects](#all-requests)**
+
+- **All Project lists -** It shows all projects in the system with project phase status and project status.
