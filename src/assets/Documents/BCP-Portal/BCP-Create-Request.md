@@ -15,23 +15,17 @@ A corporate portal is a centralized online platform used by organizations to pro
 
 Create Request has a 2 types of requests,
 
-> 1. Return Request Process
-> 2. Admin Request
+> 1. [Return Request Process](#retrun-request-process)
+> 2. [Admin Request](#admin-request)
 
 <br>
 
 > ## **[Retrun Request Process](#corporate-portal)**
 
-- **Create Request -** Employee to create request of Leave Request, Final Exit Request and Return Request for himself.
-
-- These requests can create employee by himself using his employee id.
+- **Create Request -** Create Leave Request, Final Exit Request and Return Request for an employee by himself.
 
 <br>
 
 > ## **[Admin Request](#retrun-request-process)**
 
-* Admin Request page has a 3 types of create requests page, `Renew Employee Contract, Admin Request, Letter Requests for Labour`.
-
-* These requests were able to create here, but the created requests are listed in the ERP system.
-
-<br>
+- **Create Request -** Can create request fo Renew Employee Contract request, Admin Request and Letter Requests for Labour, by an employee himself.
