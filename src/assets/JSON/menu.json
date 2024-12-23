@@ -276,7 +276,7 @@
       "children": [
         {
           "title": "Airport Reception",
-          "url": "/assets/Documents/Airport-Portal/AP-Aiport-Reception.md",
+          "url": "/assets/Documents/Airport-Portal/AP-Airport-Reception.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3284/3284697.png",
           "routeUrl": "APAirportReception"
         },
@@ -368,6 +368,18 @@
           "url": "/assets/Documents/BCP-Portal/BCP-Admin-Reports.md",
           "image": "https://cdn-icons-png.flaticon.com/128/10061/10061684.png",
           "routeUrl": "BCPAdminReports"
+        }
+      ]
+    },
+    {
+      "title": "Customer Support",
+      "icon": "fa-solid fa-handshake-angle",
+      "children": [
+        {
+          "title": "Tickets",
+          "url": "/assets/Documents/Customer-Support-Documentation/CS-Tickets.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/320/320416.png",
+          "routeUrl": "CSTickets"
         }
       ]
     }
