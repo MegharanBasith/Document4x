@@ -1,7 +1,3 @@
-![](https://portal.mawarid.com.sa/System/assets/images/mawarid-logo-2.png)
-
-<br>
-
 # **Corporate Portal**
 
 | [Retrun Request Process](#retrun-request-process) | [Admin Request](#admin-request) |

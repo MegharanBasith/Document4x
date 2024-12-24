@@ -1,7 +1,3 @@
-![](https://portal.mawarid.com.sa/System/assets/images/mawarid-logo-2.png)
-
-<br>
-
 # **Software Development Request**
 
 ## **[Information Technology](#software-development-request)**

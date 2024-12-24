@@ -1,7 +1,3 @@
-![](https://portal.mawarid.com.sa/System/assets/images/mawarid-logo-2.png)
-
-<br>
-
 # **Coordinator Portal**
 
 | [My Customer & Projects](#my-customer--projects) | [All Customers](#all-customers) | [All Projects](#all-projects) |
