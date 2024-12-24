@@ -380,6 +380,36 @@
           "url": "/assets/Documents/Customer-Support-Documentation/CS-Tickets.md",
           "image": "https://cdn-icons-png.flaticon.com/128/320/320416.png",
           "routeUrl": "CSTickets"
+        },
+        {
+          "title": "Mails",
+          "url": "/assets/Documents/Customer-Support-Documentation/CS-Mails.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/8898/8898833.png",
+          "routeUrl": "CSMails"
+        },
+        {
+          "title": "Setup",
+          "url": "/assets/Documents/Customer-Support-Documentation/CS-Setup.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/7928/7928637.png",
+          "routeUrl": "CSSetup"
+        },
+        {
+          "title": "Task",
+          "url": "/assets/Documents/Customer-Support-Documentation/CS-Task.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/1632/1632670.png",
+          "routeUrl": "CSTask"
+        },
+        {
+          "title": "Approvals",
+          "url": "/assets/Documents/Customer-Support-Documentation/CS-Approvals.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/5442/5442020.png",
+          "routeUrl": "CSApprovals"
+        },
+        {
+          "title": "All Items",
+          "url": "/assets/Documents/Customer-Support-Documentation/CS-All-Items.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/18584/18584314.png",
+          "routeUrl": "CSAllItems"
         }
       ]
     }

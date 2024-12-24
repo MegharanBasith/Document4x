@@ -6,7 +6,7 @@ The Customer Support Helpdesk is an essential resource for both customers and co
 
 > ## **[Tickets](#customer-support)**
 
-| [My Tickets](#my-tickets) | [Unassigned Tickets](#unassigned-tickets) | [All Tickets](#all-tickets) | [My All Closed Tickets](#my-all-closed-tickets) | [Assigned To Me](#assigned-to-me) | [Created By Me](#created-by-me) |
+| [My Tickets](#my-tickets) | [Unassigned Tickets](#unassigned-tickets) | [All Tickets](#all-tickets) | [My All Closed Tickets](#my-all-closed-tickets) | [Assigned To Me](#assigned-to-me) | [Created By Me](#created-by-me) | [My Team Tickets](#my-team-tickets) |
 
 <br>
 
@@ -32,7 +32,6 @@ This My Tickets menu holds the tickets from coordinator's assigned customers tic
 
   - **Pickup -** Pickup action used to pickup/assign ticket themself. The ticket status doesn't change, it remains new.
 
-
   - **Schedule -** Schedule action used to schedule the ticket to start work. The ticket status will changed to scheduled.
 
   - **Close -** Close action used to close the ticket, once the issue fixed. The ticket status will changed to closed.
@@ -40,6 +39,14 @@ This My Tickets menu holds the tickets from coordinator's assigned customers tic
   - **Start -** Once the ticket scheduled, the start action will available. Start action used when the scheduled ticket work started. The status changed to Inprogress.
 
   - **ReOpen -** Once the ticket is closed, the Reopen action will available for the ticket creator, if the issue was not fixed, the customer can reopen the ticket.
+
+  - **Comments -** Can leave normal comments and mentioned comments, the comments were listed in the conversation.
+
+  - **Notes -** Users can add notes and it will appears in the conversation.
+
+  - **Task -** Create task for the ticket and assign to the relevant users.
+
+  - **Send Approval -** Send approval by selecting approvers incase of any approvals needed to proceed the ticket further.
 
 > ## **[Unassigned Tickets](#my-tickets)**
 
@@ -60,3 +67,7 @@ This My Tickets menu holds the tickets from coordinator's assigned customers tic
 > ## **[Created By Me](#assigned-to-me)**
 
 - **Created by me -** It shows the list of tickets which is craeted by the user.
+
+> ## **[My Team Tickets](#my-team-tickets)**
+
+- **My Team Tickets -** It shows the only the coordinator's team members tickets.
