@@ -33,3 +33,21 @@
 > ## **[My Team Request](#all-tickets)**
 
 - **My Team Request -** It shows all the tickets which is created for the user's team.
+
+- **Ticket Details Page -** In the ticket details page, there are actions available to take action for the tickets.
+
+  - **Assign -** Assign action used to assign the ticket for someone. The ticket status doesn't change, it remains new.
+
+  - **Pickup -** Pickup action used to pickup/assign ticket themself. The ticket status doesn't change, it remains new.
+
+  - **Schedule -** Schedule action used to schedule the ticket to start work. The ticket status will changed to scheduled.
+
+  - **Close -** Close action used to close the ticket, once the issue fixed. The ticket status will changed to closed.
+
+  - **Start -** Once the ticket scheduled, the start action will available. Start action used when the scheduled ticket work started. The status changed to Inprogress.
+
+  - **ReOpen -** Once the ticket is closed, the Reopen action will available for the ticket creator, if the issue was not fixed, the customer can reopen the ticket.
+
+  - **Comments -** Can leave normal comments and mentioned comments, the comments were listed in the conversation.
+
+  - **Notes -** Users can add notes and it will appears in the conversation.
