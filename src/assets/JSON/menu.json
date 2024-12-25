@@ -6,31 +6,31 @@
       "children": [
         {
           "title": "Masters",
-          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Masters.md",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSK-Masters.md",
           "image":"https://cdn-icons-png.flaticon.com/128/3649/3649387.png",
           "routeUrl":"HSKMasters"
         },
         {
           "title": "Requests",
-          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Requests.md",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSK-Requests.md",
           "image": "https://cdn-icons-png.flaticon.com/128/18564/18564587.png",
           "routeUrl": "HSKRequests"
         },
         {
           "title": "Reports",
-          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Reports.md",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSK-Reports.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3270/3270753.png",
           "routeUrl": "HSKReports"
         },
         {
           "title": "Task",
-          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Task.md",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSK-Task.md",
           "image": "https://cdn-icons-png.flaticon.com/128/762/762686.png",
           "routeUrl": "HSKTask"
         },
         {
           "title": "Approvals",
-          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Approvals.md",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSK-Approvals.md",
           "image": "https://cdn-icons-png.flaticon.com/128/5442/5442020.png",
           "routeUrl": "HSKApprovals"
         }
