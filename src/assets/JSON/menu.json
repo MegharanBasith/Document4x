@@ -5,10 +5,34 @@
       "icon": "fa fa-desktop",
       "children": [
         {
-          "title": "About Helpdesk",
-          "url": "/assets/Documents/Mawarid-helpdesk-documentation/MawaridHelpdeskDocumentation.md",
-          "image":"https://cdn-icons-png.flaticon.com/128/4969/4969093.png",
-          "routeUrl":"MawaridHelpdeskDocumentation"
+          "title": "Masters",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Masters.md",
+          "image":"https://cdn-icons-png.flaticon.com/128/3649/3649387.png",
+          "routeUrl":"HSKMasters"
+        },
+        {
+          "title": "Requests",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Requests.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/18564/18564587.png",
+          "routeUrl": "HSKRequests"
+        },
+        {
+          "title": "Reports",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Reports.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/3270/3270753.png",
+          "routeUrl": "HSKReports"
+        },
+        {
+          "title": "Task",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Task.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/762/762686.png",
+          "routeUrl": "HSKTask"
+        },
+        {
+          "title": "Approvals",
+          "url": "/assets/Documents/Helpdesk-Documentation/HSk-Approvals.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/5442/5442020.png",
+          "routeUrl": "HSKApprovals"
         }
       ]
     },
