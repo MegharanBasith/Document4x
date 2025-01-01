@@ -2,7 +2,7 @@
 
 ## **[Masters](#helpdesk)**
 
-| [Team]() | [Technician]() | [Category]() | [Ticket Type]() |
+| [Team](#team) | [Technician](#technician) | [Category](#category) | [Ticket Type](#ticket-type) |
 
 <br>
 

@@ -96,33 +96,33 @@
       "children": [
         {
           "title": "Dashboard",
-          "url":"/assets/Documents/Document-Management-System/Dashboard.md",
+          "url":"/assets/Documents/Document-Management-System/DMS-Dashboard.md",
           "image":"https://cdn-icons-png.flaticon.com/128/10397/10397171.png",
-          "routeUrl":"Dashboard"
+          "routeUrl":"DMSDashboard"
         },
         {
           "title": "Templates",
-          "url":"/assets/Documents/Document-Management-System/Templates.md",
+          "url":"/assets/Documents/Document-Management-System/DMS-Templates.md",
           "image":"https://cdn-icons-png.flaticon.com/128/6863/6863985.png",
-          "routeUrl":"Templates"
+          "routeUrl":"DMSTemplates"
         },
         {
           "title": "My Requests",
-          "url":"/assets/Documents/Document-Management-System/My Requests.md",
+          "url":"/assets/Documents/Document-Management-System/DMS-My Requests.md",
           "image":"https://cdn-icons-png.flaticon.com/128/17616/17616280.png",
-          "routeUrl":"MyRequests"
+          "routeUrl":"DMSMyRequests"
         },
         {
           "title": "My Approvals",
-          "url":"/assets/Documents/Document-Management-System/My Approvals.md",
+          "url":"/assets/Documents/Document-Management-System/DMS-My Approvals.md",
           "image":"https://cdn-icons-png.flaticon.com/128/5442/5442020.png",
-          "routeUrl":"MyApprovals"
+          "routeUrl":"DMSMyApprovals"
         },
         {
           "title": "System",
-          "url":"/assets/Documents/Document-Management-System/System.md",
+          "url":"/assets/Documents/Document-Management-System/DMS-System.md",
           "image":"https://cdn-icons-png.flaticon.com/128/17003/17003310.png",
-          "routeUrl":"System"
+          "routeUrl":"DMSSystem"
         }
       ]
     },
@@ -132,39 +132,39 @@
       "children": [
         {
           "title": "My Customer & Projects",
-          "url": "/assets/Documents/Coordinator-Portal/My Customer & Projects.md",
+          "url": "/assets/Documents/Coordinator-Portal/CDR-My Customer & Projects.md",
           "image": "https://cdn-icons-png.flaticon.com/128/3749/3749770.png",
-          "routeUrl": "MyCustomer&Projects"
+          "routeUrl": "CDRMyCustomer&Projects"
         },
         {
           "title": "Requests",
-          "url": "/assets/Documents/Coordinator-Portal/Requests.md",
+          "url": "/assets/Documents/Coordinator-Portal/CDR-Requests.md",
           "image": "https://cdn-icons-png.flaticon.com/128/2003/2003257.png",
-          "routeUrl": "Requests"
+          "routeUrl": "CDRRequests"
         },
         {
           "title": "Report & Inquiries",
-          "url": "/assets/Documents/Coordinator-Portal/Report & Inquiries.md",
+          "url": "/assets/Documents/Coordinator-Portal/CDR-Report & Inquiries.md",
           "image": "https://cdn-icons-png.flaticon.com/128/9095/9095902.png",
-          "routeUrl": "Report&Inquiries"
+          "routeUrl": "CDRReport&Inquiries"
         },
         {
           "title": "Timesheet",
-          "url": "/assets/Documents/Coordinator-Portal/Timesheet.md",
+          "url": "/assets/Documents/Coordinator-Portal/CDR-Timesheet.md",
           "image": "https://cdn-icons-png.flaticon.com/128/1048/1048953.png",
-          "routeUrl": "Timesheet"
+          "routeUrl": "CDRTimesheet"
         },
         {
           "title": "Security",
-          "url": "/assets/Documents/Coordinator-Portal/Security.md",
+          "url": "/assets/Documents/Coordinator-Portal/CDR-Security.md",
           "image": "https://cdn-icons-png.flaticon.com/128/1691/1691940.png",
-          "routeUrl": "Security"
+          "routeUrl": "CDRSecurity"
         },
         {
           "title": "Master",
-          "url": "/assets/Documents/Coordinator-Portal/Master.md",
+          "url": "/assets/Documents/Coordinator-Portal/CDR-Master.md",
           "image": "https://cdn-icons-png.flaticon.com/128/868/868795.png",
-          "routeUrl": "Master"
+          "routeUrl": "CDRMaster"
         }
       ]
     },
@@ -174,27 +174,27 @@
       "children":[
         {
           "title": "Requester",
-          "url": "/assets/Documents/Software-Development-Request-Documentation/Requester.md",
+          "url": "/assets/Documents/Software-Development-Request-Documentation/SDR-Requester.md",
           "image": "https://cdn-icons-png.flaticon.com/128/17616/17616280.png",
-          "routeUrl": "Requester"
+          "routeUrl": "SDRRequester"
         },
         {
           "title": "Information Technology",
-          "url": "/assets/Documents/Software-Development-Request-Documentation/InformationTechnology.md",
+          "url": "/assets/Documents/Software-Development-Request-Documentation/SDR-InformationTechnology.md",
           "image": "https://cdn-icons-png.flaticon.com/128/2888/2888407.png",
-          "routeUrl": "InformationTechnology"
+          "routeUrl": "SDRInformationTechnology"
         },
         {
           "title": "Steering Committee",
-          "url": "/assets/Documents/Software-Development-Request-Documentation/SteeringCommittee.md",
+          "url": "/assets/Documents/Software-Development-Request-Documentation/SDR-SteeringCommittee.md",
           "image": "https://cdn-icons-png.flaticon.com/128/17817/17817665.png",
-          "routeUrl": "SteeringCommittee"
+          "routeUrl": "SDRSteeringCommittee"
         },
         {
           "title": "Masters",
-          "url": "/assets/Documents/Software-Development-Request-Documentation/Masters.md",
+          "url": "/assets/Documents/Software-Development-Request-Documentation/SDR-Masters.md",
           "image": "https://cdn-icons-png.flaticon.com/128/7928/7928638.png",
-          "routeUrl": "Masters"
+          "routeUrl": "SDRMasters"
         }
       ]
     },
