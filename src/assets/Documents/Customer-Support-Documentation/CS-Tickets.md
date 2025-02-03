@@ -12,6 +12,8 @@ The Customer Support Helpdesk is an essential resource for both customers and co
 
 > ## **[My Tickets](#tickets)**
 
+![](assets/Documents/Customer-Support-Documentation/Assets/Customer%20Support1.drawio.png)
+
 This My Tickets menu holds the tickets from coordinator's assigned customers tickets. Those tickets are showcasing here in the workflow stage bar separately which depends on the ticket status.
 
 - **New -** It workflow bar has the new tickets which may be assigned or unassigned.
