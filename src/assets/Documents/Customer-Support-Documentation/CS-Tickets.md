@@ -12,7 +12,7 @@ The Customer Support Helpdesk is an essential resource for both customers and co
 
 > ## **[My Tickets](#tickets)**
 
-![](assets/Documents/Customer-Support-Documentation/Assets/Customer%20Support1.drawio.png)
+![](assets/Documents/Customer-Support-Documentation/Assets/Customer%20Support.png)
 
 This My Tickets menu holds the tickets from coordinator's assigned customers tickets. Those tickets are showcasing here in the workflow stage bar separately which depends on the ticket status.
 
@@ -40,13 +40,13 @@ This My Tickets menu holds the tickets from coordinator's assigned customers tic
 
   - **Start -** Once the ticket scheduled, the start action will available. Start action used when the scheduled ticket work started. The status changed to Inprogress.
 
-  - **ReOpen -** Once the ticket is closed, the Reopen action will available for the ticket creator, if the issue was not fixed, the customer can reopen the ticket.
+  - **ReOpen -** Once the ticket is closed, the customer can Reopen the ticket in two ways, one is by using the Reopen action button and another way is to send mail reply for the closed mail to reopen automatically, when the issue was not fixed.
 
   - **Comments -** Can leave normal comments and mentioned comments, the comments were listed in the conversation.
 
   - **Notes -** Users can add notes and it will appears in the conversation.
 
-  - **Task -** Create task for the ticket and assign to the relevant users.
+  - **Ticket -** Create ticket (instead of task) for the request, that ticket will create in helpdesk and the relevant department will assign ticket to the technicians and this flow will continue in helpdesk.
 
   - **Send Approval -** Send approval by selecting approvers incase of any approvals needed to proceed the ticket further.
 

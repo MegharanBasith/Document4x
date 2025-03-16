@@ -419,7 +419,7 @@
         },
         {
           "title": "Task",
-          "url": "/assets/Documents/Customer-Support-Documentation/CS-Task.md",
+          "url": "/assets/Documents/Customer-Support-Documentation/CS-Task..md",
           "image": "https://cdn-icons-png.flaticon.com/128/1632/1632670.png",
           "routeUrl": "CSTask"
         },
@@ -434,6 +434,12 @@
           "url": "/assets/Documents/Customer-Support-Documentation/CS-All-Items.md",
           "image": "https://cdn-icons-png.flaticon.com/128/18584/18584314.png",
           "routeUrl": "CSAllItems"
+        },
+        {
+          "title": "Mail Notification",
+          "url": "/assets/Documents/Customer-Support-Documentation/CS-Mail-Notification.md",
+          "image": "https://cdn-icons-png.flaticon.com/128/7286/7286188.png",
+          "routeUrl": "CSMailNotification"
         }
       ]
     }
