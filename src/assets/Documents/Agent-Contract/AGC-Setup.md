@@ -20,7 +20,7 @@ The Agent Contract application plays a role between the agent and coordinator re
 
       - **2**- **[InActive](#inactive)** - User can InActive the contract template, if it is wrong or expired. While InActive the contract template, the template will change from `Active to InActive.`
 
-      - **3**- **[Duplicate](#duplicate)** - User can Duplicate the contract template to make changes in the template and can add edditional points in the template and can change the contract type.
+      - **3**- **[Duplicate](#duplicate)** - User can Duplicate the contract template to make changes in the template and can add additional points in the template and can change the contract type.
 
 > ## **[Nationality](#contract-template)**
 
