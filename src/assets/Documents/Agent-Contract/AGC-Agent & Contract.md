@@ -22,9 +22,9 @@ User can create new contract with contract template, the newly created contract 
 
       - _The action field is following to,_
 
-        - **1**- **[Submit (Action)](#submit)** - Submit action to `move the contract to the Submitted stage` in the agent contract application. And the Document management system will receive this contract request in the pending approval stage.
+        - **1**- **[Submit (Action)](#submit)** - _**Submit**_ action to `move the contract to the Submitted stage` in the agent contract application. And the Document management system will receive this contract request in the pending approval stage.
 
-        - **2**- **[Preview](#preview)** - Preview action to `download and view the contract template` in the pdf format, even user can take printout this template.
+        - **2**- **[Preview](#preview)** - _**Preview**_ action to `download and view the contract template` in the pdf format, even user can take printout this template.
 
 - ## **Submitted :**
 
@@ -32,7 +32,7 @@ User can create new contract with contract template, the newly created contract 
 
     - _The action field is following to,_
 
-      - **1**- **[Preview](#preview)** - Preview action to `download and view the contract template` in the pdf format, even user can take printout this template.
+      - **1**- **[Preview](#preview)** - _**Preview**_ action to `download and view the contract template` in the pdf format, even user can take printout this template.
 
 - ## **Approved :**
 
@@ -66,9 +66,9 @@ User can create a new appendix contract with contract number and contract templa
 
       - _The action field is following to,_
 
-        - **1**- **[Submit (Action)](#submit)** - Submit action to `move the appendix contract to the Submitted stage` in the agent contract application. And the Document management system will receive this appendix contract request in the pending approval stage.
+        - **1**- **[Submit (Action)](#submit)** - _**Submit**_ action to `move the appendix contract to the Submitted stage` in the agent contract application. And the Document management system will receive this appendix contract request in the pending approval stage.
 
-        - **2**- **[Preview](#preview)** - Preview action to `download and view the appendix contract template` in the pdf format, even user can take printout this template.
+        - **2**- **[Preview](#preview)** - _**Preview**_ action to `download and view the appendix contract template` in the pdf format, even user can take printout this template.
 
 - ## **Submitted :**
 
@@ -76,7 +76,7 @@ User can create a new appendix contract with contract number and contract templa
 
     - _The action field is following to,_
 
-      - **1**- **[Preview](#preview)** - Preview action to `download and view the appendix contract template` in the pdf format, even user can take printout this appendix template.
+      - **1**- **[Preview](#preview)** - _**Preview**_ action to `download and view the appendix contract template` in the pdf format, even user can take printout this appendix template.
 
 - ## **Approved :**
 
