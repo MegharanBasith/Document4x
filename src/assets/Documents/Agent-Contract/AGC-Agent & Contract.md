@@ -12,7 +12,7 @@
 
 > ## **[Contract](#all-contract)**
 
-User can create new contract with contract template, the newly created contract will be defaultly in draft stage. In this contract menu, the contract list will display by the contract status in the different stages.
+User can create new contract with contract template, the newly created contract will be defaultly in draft stage. In this contract menu, the contract list will display by the contract status in the different workflow stages.
 
 | [Draft](#draft) > [Submitted](#submitted) > [Approved](#approved) > [Agency Approved](#agency-approved) > [Rejected](#rejected) |
 
@@ -28,7 +28,7 @@ User can create new contract with contract template, the newly created contract 
 
 - ## **Submitted :**
 
-  - It shows the list of contracts in the submitted stage, which means the `agent contract are in the pending approval list` in the Document Management System. Once in the document management system take actions for this agent contract request, it will move to the `next stage approved or rejected` which is depends upon the action.
+  - It shows the list of contracts in the submitted stage, which means the `agent contract are in the pending approval list` in the Document Management System. Once in the document management system take actions for this pending approval contract, it will move to the `next stage "approved or rejected",` which is depends upon the action.
 
     - _The action field is following to,_
 
@@ -36,19 +36,19 @@ User can create new contract with contract template, the newly created contract 
 
 - ## **Approved :**
 
-  - It shows the list of Approved Agent contracts, which is approved from the document management system by coordinator or manager.
+  - It shows the list of Approved Agent contracts, which is `approved by the coordinator or manager` from the document management system.
 
     - _The action field is following to,_
 
-      - **1**- **[Agent Approved (Action)](#agent-approved)** - Agent Approved action to `move the approved contract to the Agency approved stage.`
+      - **1**- **[Agent Approved (Action)](#agent-approved)** - _**Agent Approved**_ action to `move the approved contract to the Agency approved stage.`
 
 - ## **Agency Approved :**
 
-  - It shows the list of Agency approved contract comes from the approved stage (Previous stage).
+  - It shows the list of Agency approved contract, data comes from the approved stage (Previous stage).
 
 - ## **Rejected :**
 
-  - It shows the list of Rejected agent contract, which the `contract is rejected in the document management system` by the coordinator or manager.
+  - It shows the list of Rejected agent contract, which the `contract is rejected by the coordinator or manager` from the document management system.
 
 > ## **[All Appendix](#contract)**
 
@@ -80,16 +80,16 @@ User can create a new appendix contract with contract number and contract templa
 
 - ## **Approved :**
 
-  - It shows the list of Approved Agent appendix contracts, which is approved from the document management system by coordinator or manager.
+  - It shows the list of Approved Agent appendix contracts, which is `approved by the coordinator or manager` from the document management system.
 
     - _The action field is following to,_
 
-      - **1**- **[Agent Approved (Action)](#agent-approved)** - Agent Approved action to `move the approved appendix contract to the Agency approved stage.`
+      - **1**- **[Agent Approved (Action)](#agent-approved)** - _**Agent Approved**_ action to `move the approved appendix contract to the Agency approved stage.`
 
 - ## **Agency Approved :**
 
-  - It shows the list of Agency approved appendix contract comes from the approved stage (Previous stage).
+  - It shows the list of Agency approved appendix contract, data comes from the approved stage (Previous stage).
 
 - ## **Rejected :**
 
-  - It shows the list of Rejected agent appendix contract, which the `contract is rejected in the document management system` by the coordinator or manager.
+  - It shows the list of Rejected agent appendix contract, which the `contract is rejected by the coordinator or manager` from the document management system.
