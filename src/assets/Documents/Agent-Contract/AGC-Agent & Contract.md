@@ -26,6 +26,8 @@ User can create new contract with contract template, the newly created contract 
 
         - **2**- **[Preview](#preview)** - _**Preview**_ action to `download and view the contract template` in the pdf format, even user can take printout this template.
 
+    - **Email Notification for Approver -** When the user take submit action to send agent contract for an approval, the approval request will send as a `mail notification to the particular assigned approver.`
+
 - ## **Submitted :**
 
   - It shows the list of contracts in the submitted stage, which means the `agent contract are in the pending approval list` in the Document Management System. Once in the document management system take actions for this pending approval contract, it will move to the `next stage "approved or rejected",` which is depends upon the action.
@@ -41,6 +43,8 @@ User can create new contract with contract template, the newly created contract 
     - _The action field is following to,_
 
       - **1**- **[Agent Approved (Action)](#agent-approved)** - _**Agent Approved**_ action to `move the approved contract to the Agency approved stage.`
+
+  - **Email Notification for an Agent -** When an agent sent approval request to approver, the approver will receive mail notification. Once the approver approved the agent contract request, the agent will receive `mail notification attached with approved contract file in pdf format.`
 
 - ## **Agency Approved :**
 
