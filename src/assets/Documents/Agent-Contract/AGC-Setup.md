@@ -24,4 +24,4 @@ The Agent Contract application plays a role between the agent and coordinator re
 
 > ## **[Nationality](#contract-template)**
 
-  - **Nationality List -** User can create the Nationality list as master data, which is to be shown in the nationality dropdown field in the contract template create.
+  - **Nationality List -** Create the Nationality list as master data, which is to be shown in the nationality dropdown field while creating contract template.

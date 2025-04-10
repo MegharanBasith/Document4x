@@ -4,11 +4,11 @@
 
 > ## **[Agent](#agent-contract)**
 
-  - **Agent Create -** The User can create the Agent list here by getting agent details from the live data.
+  - **Agent Create -** The User can create the Agent list here.
 
 > ## **[All Contract](#agent)**
 
-  - **Contract Create -** User can create new contract with contract template and also can `view all contracts` in the table without any status priorities. Here user can view all the contracts and its details.
+  - **Contract Create -** User can create new contract with contract template and also can `view all contracts` in the table without any contract status priorities. Here user can view all the contracts and its details.
 
 > ## **[Contract](#all-contract)**
 
@@ -26,11 +26,13 @@ User can create new contract with contract template, the newly created contract 
 
         - **2**- **[Preview](#preview)** - _**Preview**_ action to `download and view the contract template` in the pdf format, even user can take printout this template.
 
+        - **3**- **[Prin Preview](#printpreview)** - _**Print Preview**_ action to `take physical printout copy of the contract` directly by using this action.
+
     - **Email Notification for Approver -** When the user take submit action to send agent contract for an approval, the approval request will send as a `mail notification to the particular assigned approver.`
 
 - ## **Submitted :**
 
-  - It shows the list of contracts in the submitted stage, which means the `agent contract are in the pending approval list` in the Document Management System. Once in the document management system take actions for this pending approval contract, it will move to the `next stage "approved or rejected",` which is depends upon the action.
+  - It shows the list of contracts in the submitted stage, which means the `agent contract are in the pending approval list` in the Document Management System. Once in the document management system take actions for this approval request, it will move to the `next stage "approved or rejected",` which is depends upon the action.
 
     - _The action field is following to,_
 
@@ -44,11 +46,17 @@ User can create new contract with contract template, the newly created contract 
 
       - **1**- **[Agent Approved (Action)](#agent-approved)** - _**Agent Approved**_ action to `move the approved contract to the Agency approved stage.`
 
+<br>      
+
   - **Email Notification for an Agent -** When an agent sent approval request to approver, the approver will receive mail notification. Once the approver approved the agent contract request, the agent will receive `mail notification attached with approved contract file in pdf format.`
 
 - ## **Agency Approved :**
 
   - It shows the list of Agency approved contract, data comes from the approved stage (Previous stage).
+
+    - _The action field is following to,_
+
+      - **1**- **[Agent Approved (Action)](#agent-approved)**
 
 - ## **Rejected :**
 
