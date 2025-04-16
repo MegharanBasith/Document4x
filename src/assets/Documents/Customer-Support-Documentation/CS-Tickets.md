@@ -46,7 +46,7 @@ This My Tickets menu holds the tickets from coordinator's assigned customers tic
 
   - **Notes -** Users can add notes and it will appears in the conversation.
 
-  - **Ticket -** Create ticket (instead of task) for the request, that ticket will create in helpdesk and the relevant department will assign ticket to the technicians and this flow will continue in helpdesk.
+  - **Ticket -** Create ticket (instead of task) for the request, that ticket will create in helpdesk and the relevant department will assign ticket to the technicians and this flow will continue in helpdesk as usual.
 
   - **Send Approval -** Send approval by selecting approvers incase of any approvals needed to proceed the ticket further.
 

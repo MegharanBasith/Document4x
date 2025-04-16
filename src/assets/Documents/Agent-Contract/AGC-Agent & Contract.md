@@ -26,7 +26,7 @@ User can create new contract with contract template, the newly created contract 
 
         - **2**- **[Preview](#preview)** - _**Preview**_ action to `download and view the contract template` in the pdf format, even user can take printout this template.
 
-        - **3**- **[Prin Preview](#printpreview)** - _**Print Preview**_ action to `take physical printout copy of the contract` directly by using this action.
+        - **3**- **[Print Preview](#printpreview)** - _**Print Preview**_ action to `take physical printout copy of the contract` directly by using this action.
 
     - **Email Notification for Approver -** When the user take submit action to send agent contract for an approval, the approval request will send as a `mail notification to the particular assigned approver.`
 
